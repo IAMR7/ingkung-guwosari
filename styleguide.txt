@@ -1,0 +1,8 @@
+COLOR PALETTE
+===================
+PRIMARY : #38c5a0
+SECONDARY :
+DANGER :
+SUCCESS :
+WARNING :
+INFO :
