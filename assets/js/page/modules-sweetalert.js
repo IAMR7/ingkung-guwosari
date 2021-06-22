@@ -34,7 +34,7 @@ $("#swal-6").click(function() {
         icon: 'success',
       });
       setTimeout(function(){ 
-        window.location.href = "invoice.html";
+        window.location.href = "pantau-pesanan.html";
       }, 1500);
       } else {
       swal('Anda membatalkan pesanan');
