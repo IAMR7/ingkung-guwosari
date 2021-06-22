@@ -269,11 +269,6 @@ i.icon-shop {
     font-size: 30px;
 }
 
-/* div.image-preview.bukti-bayar {
-    background-image: url("../img/avatar/avatar-1.png");
-    background-size: cover;
-} */
-
 @media (min-width: 992px) {
     div.main-content {
         margin-top: 0;
