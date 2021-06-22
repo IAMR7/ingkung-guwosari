@@ -186,6 +186,7 @@ div.nilai-kualitas-produk div.text-warning i {
     font-size: 20px;
 }
 
+/* DAFTAR */
 img.ilus-daftar {
     width: 100%;
 }
@@ -195,6 +196,7 @@ div.tombol-daftar a.btn {
     margin-bottom: 20px;
 }
 
+/* LOGIN */
 body.login-page {
     background-image: url("../../assets/img/bg-login.jpg");
     background-size: cover;
@@ -261,6 +263,16 @@ div.image-preview.profil {
     background-image: url("../img/avatar/avatar-1.png");
     background-size: cover;
 }
+
+/* PANTAU PESANAN */
+i.icon-shop {
+    font-size: 30px;
+}
+
+/* div.image-preview.bukti-bayar {
+    background-image: url("../img/avatar/avatar-1.png");
+    background-size: cover;
+} */
 
 @media (min-width: 992px) {
     div.main-content {

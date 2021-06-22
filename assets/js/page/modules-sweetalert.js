@@ -5,7 +5,10 @@ $("#swal-1").click(function() {
 });
 
 $("#swal-2").click(function() {
-	swal('Good Job', 'You clicked the button!', 'success');
+	swal('Terima Kasih!', 'Pesanan anda akan segera diproses', 'success');
+  setTimeout(function(){ 
+    window.location.href = "index-1.html";
+  }, 1500);
 });
 
 $("#swal-3").click(function() {
