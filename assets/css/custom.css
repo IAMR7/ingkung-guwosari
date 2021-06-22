@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/* HOME UTAMA */
 div.main-content {
     margin-top: 50px;
 }
@@ -71,6 +72,7 @@ div.wisata a.produk div.card-img-overlay {
     opacity: 80%;
 }
 
+/* DETAIL PRODUK */
 div.foto-detail-produk div.tile {
     margin-top: -100px;
     margin-bottom: 25px;
@@ -136,6 +138,7 @@ div.ringkasan-belanja div.total-keseluruhan {
     font-size: 16.5px;
 }
 
+/* CHECKOUT */
 span.label-rumah {
     padding: 3px;
     font-size: 10px;
@@ -164,6 +167,7 @@ div.invoice-title h2 {
     margin-bottom: 50px;
 }
 
+/* PROFIL TOKO */
 div.header-profil-toko {
     padding: 20px;
     box-shadow:4px 4px 20px 0.5px rgb(211, 211, 211);
