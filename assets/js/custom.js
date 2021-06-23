@@ -65,6 +65,7 @@ function startTimer(duration, display) {
     }, 1000);
 }
 
+// Fungsi Hitungan Mundur
 jQuery(function ($) {
     var tigapuludetik = 31,
         display = $('#time');
