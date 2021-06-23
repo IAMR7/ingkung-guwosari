@@ -310,7 +310,7 @@
       <div class="main-content">
         <section class="section">
           <div class="section-body d-flex justify-content-center">
-            <div class="card" data-width="60%">
+            <div class="card form-daftar-umkm">
               <div class="card-body">
                 <div class="container">
                   <h5 class="text-center mb-5">DAFTAR UMKM</h5>
@@ -335,6 +335,51 @@
                     <label for="">Alamat UMKM</label>
                     <textarea class="form-control" name="" id="" rows="3"></textarea>
                   </div>
+
+                  <div class="form-group">
+                    <label for="">Unggah 1 foto toko, 1 foto produk, dan 1 foto pemilik toko</label>
+                  </div>
+
+                  <div class="row text-center">
+                    <div class="col-lg-4 col-md-4 col-12">
+                      <div class="form-group">
+                        <label for="">Unggah Foto Toko</label>
+                        <input type="file" accept="image/*" onchange="loadFile(event)"
+                          class="form-control">
+                      </div>
+                      <img class="image image-default mb-3" src="" alt="" id="upload-daftar-umkm-1" width="170px" height="170px">
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-12">
+                      <div class="form-group">
+                        <label for="">Unggah Foto Produk</label>
+                        <input type="file" accept="image/*" onchange="loadFileDua(event)"
+                          class="form-control">
+                      </div>
+                      <img class="image image-default mb-3" src="" alt="" id="upload-daftar-umkm-2" width="170px" height="170px">
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-12">
+                      <div class="form-group">
+                        <label for="">Unggah Foto Pemilik Toko</label>
+                        <input type="file" accept="image/*" onchange="loadFileTiga(event)"
+                          class="form-control">
+                      </div>
+                      <img class="image image-default" src="" alt="" id="upload-daftar-umkm-3" width="170px" height="170px">
+                    </div>
+                  </div>
+
+                  <div class="form-check mt-5 mb-4">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue">
+                      Saya menyetujui kebijakan dan privasi yang berlaku
+                    </label>
+                  </div>
+
+                  <button id="swal-daftar-umkm" class="btn btn-success">
+                    <i class="fas fa-store"></i> Daftar UMKM
+                  </button>
+                  <a href="index-1.html" class="btn btn-warning">Batalkan/kembali</a>
 
                 </div>
               </div>
@@ -367,6 +412,11 @@
   <script src="assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
   <script src="assets/modules/moment.min.js"></script>
   <script src="assets/js/stisla.js"></script>
+  <script src="assets/modules/jquery-selectric/jquery.selectric.min.js"></script>
+  <script src="assets/modules/upload-preview/assets/js/jquery.uploadPreview.min.js"></script>
+  <script src="assets/js/page/features-post-create.js"></script>
+  <script src="assets/modules/sweetalert/sweetalert.min.js"></script>
+  <script src="assets/js/page/modules-sweetalert.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/custom.js"></script>
 

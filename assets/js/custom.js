@@ -71,3 +71,31 @@ jQuery(function ($) {
         display = $('#time');
     startTimer(tigapuludetik, display);
 });
+
+//Multi Upload Daftar UMKM
+var loadFile = function(event) {
+    var reader = new FileReader();
+    reader.onload = function(){
+      var uploadDaftarUmkmSatu = document.getElementById('upload-daftar-umkm-1');
+      uploadDaftarUmkmSatu.src = reader.result;
+    };
+    reader.readAsDataURL(event.target.files[0]);
+};
+
+var loadFileDua = function(event) {
+    var reader = new FileReader();
+    reader.onload = function(){
+      var uploadDaftarUmkmDua = document.getElementById('upload-daftar-umkm-2');
+      uploadDaftarUmkmDua.src = reader.result;
+    };
+    reader.readAsDataURL(event.target.files[0]);
+};
+
+var loadFileTiga = function(event) {
+    var reader = new FileReader();
+    reader.onload = function(){
+      var uploadDaftarUmkmTiga = document.getElementById('upload-daftar-umkm-3');
+      uploadDaftarUmkmTiga.src = reader.result;
+    };
+    reader.readAsDataURL(event.target.files[0]);
+};

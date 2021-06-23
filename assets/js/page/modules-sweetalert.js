@@ -105,4 +105,29 @@ $("#swal-batal-transaksi").click(function() {
 
 $("#swal-beranda-umkm").click(function() {
 	swal('Anda harus mendaftar sebagai UMKM terlebih dahulu');
+  setTimeout(function(){ 
+    window.location.href = "daftar-umkm.html";
+  }, 1500);
+});
+
+$("#swal-daftar-umkm").click(function() {
+  swal({
+      title: 'Apakah Data Sudah Valid ?',
+      text: 'Setelah menekan "OK" pendaftaran akan langsung divalidasi oleh tim Admin',
+      icon: 'warning',
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+      swal('Pendaftaran Berhasil Dilakukan! Silahkan menunggu konfirmasi selanjutnya', {
+        icon: 'success',
+      });
+      setTimeout(function(){ 
+        window.location.href = "index-1.html";
+      }, 1500);
+      } else {
+      swal('Membatalkan Pendaftaran UMKM');
+      }
+    });
 });

@@ -275,6 +275,18 @@ i.icon-shop {
     font-size: 30px;
 }
 
+/* DAFTAR UMKM */
+div.form-daftar-umkm {
+    width: 100%;
+}
+
+img.image-default {
+    background: url("../img/news/img01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 @media (min-width: 992px) {
     div.main-content {
         margin-top: 0;
@@ -356,6 +368,10 @@ i.icon-shop {
 
     div.ajakan-umkm {
         width: 49%;
+    }
+
+    div.form-daftar-umkm {
+        width: 60%;
     }
 
 }
