@@ -120,12 +120,12 @@ $("#swal-daftar-umkm").click(function() {
     })
     .then((willDelete) => {
       if (willDelete) {
-      swal('Pendaftaran Berhasil Dilakukan! Silahkan menunggu konfirmasi selanjutnya', {
+      swal('Pendaftaran Berhasil Dilakukan! Mulailah dengan mengunggah produk anda', {
         icon: 'success',
       });
       setTimeout(function(){ 
-        window.location.href = "index-1.html";
-      }, 1500);
+        window.location.href = "dashboard-penjual.html";
+      }, 2500);
       } else {
       swal('Membatalkan Pendaftaran UMKM');
       }
