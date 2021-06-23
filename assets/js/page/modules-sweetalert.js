@@ -66,3 +66,43 @@ $("#swal-8").click(function() {
     timer: 3000,
   });
 });
+
+$("#swal-edit-profil-akun").click(function() {
+	swal('Berhasil !', 'Data anda berhasil diperbaharui', 'success');
+  setTimeout(function(){ 
+    window.location.href = "profil-akun.html";
+  }, 1500);
+});
+
+$("#swal-ubah-password").click(function() {
+	swal('Berhasil !', 'Kata Sandi anda berhasil diubah', 'success');
+  setTimeout(function(){ 
+    window.location.href = "profil-akun.html";
+  }, 1500);
+});
+
+$("#swal-batal-transaksi").click(function() {
+  swal({
+      title: 'Yakin ingin membatalkan transaksi ?',
+      text: 'Setelah menekan "OK" transaksi akan dibatalkan',
+      icon: 'warning',
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+      swal('Transaksi sukses dibatalkan ! Terimakasih', {
+        icon: 'success',
+      });
+      setTimeout(function(){ 
+        window.location.href = "index-1.html";
+      }, 1500);
+      } else {
+      swal('Gagal Membatalkan');
+      }
+    });
+});
+
+$("#swal-beranda-umkm").click(function() {
+	swal('Anda harus mendaftar sebagai UMKM terlebih dahulu');
+});
