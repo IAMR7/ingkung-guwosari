@@ -287,6 +287,20 @@ img.image-default {
     background-position: center;
 }
 
+/* DASHBOARD UMKM */
+div.widget-edukasi img {
+    border-radius: 10px;
+}
+
+div.text-widget-edukasi {
+    font-size: 0.90em;
+}
+
+div.text-widget-edukasi p {
+    line-height: 1.50em;
+    margin-top: 7px;
+}
+
 @media (min-width: 992px) {
     div.main-content {
         margin-top: 0;
