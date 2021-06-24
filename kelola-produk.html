@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Modules &rsaquo; DataTables &mdash; Stisla</title>
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="assets/modules/datatables/datatables.min.css">
+  <link rel="stylesheet" href="assets/modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/modules/datatables/Select-1.2.4/css/select.bootstrap4.min.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <!-- Start GA -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-94034622-3');
+  </script>
+  <!-- /END GA -->
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <!-- NAVBAR -->
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <form class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i
+                  class="fas fa-search"></i></a></li>
+          </ul>
+          <div class="search-element">
+            <input class="form-control" type="search" placeholder="Cari Sesuatu Disini" aria-label="Search"
+              data-width="250">
+            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+            <div class="search-backdrop"></div>
+          </div>
+        </form>
+        <ul class="navbar-nav navbar-right">
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+              class="nav-link nav-link-lg message-toggle beep"><i class="far fa-envelope"></i></a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right">
+              <div class="dropdown-header">Pesan
+                <div class="float-right">
+                  <a href="#">Tandai Semua Sudah Dibaca</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-message">
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-avatar">
+                    <img alt="image"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOfXsvJz_2Xd6SKqH6LCkQs2_9rd__b1PDXw&usqp=CAU"
+                      class="rounded-circle">
+                    <div class="is-online"></div>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Randi Nugraha</b>
+                    <p>Halo Kak, kemeja batik yang ini ready gk ya?</p>
+                    <div class="time">2 Jam Yang Lalu</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-avatar">
+                    <img alt="image"
+                      src="https://media-exp1.licdn.com/dms/image/C5103AQGsMFce4zMF-w/profile-displayphoto-shrink_200_200/0/1517348277979?e=1626912000&v=beta&t=vb1gX9xMrDKOTKBp4-DTbB9PXGMLZCycfdENXVZX8Qk"
+                      class="rounded-circle">
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Henny Trisnadewi</b>
+                    <p>Ndakpapa mas biru atau hijau juga bole</p>
+                    <div class="time">1 Hari Yang Lalu</div>
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">Lihat Semua Pesan <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+              class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right">
+              <div class="dropdown-header">Pemberitahuan
+                <div class="float-right">
+                  <a href="#">Tandai Semua Sudah Dibaca</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-icons">
+
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-icon bg-primary text-white">
+                    <i class="fas fa-store"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    Anda berhasil mendaftar sebagai UMKM !
+                    <div class="time text-primary">2 Menit Yang Lalu</div>
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">Lihat Semua <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" data-toggle="dropdown"
+              class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+              <img alt="image"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbXQr_WMRVbfOokFa-HWqdrQGb5pDUkyoG9A&usqp=CAU"
+                class="rounded-circle mr-1">
+              <div class="d-sm-none d-lg-inline-block">Halo, Erisa Batik</div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-title">Sedang Aktif</div>
+              <a href="#" class="dropdown-item has-icon">
+                <i class="fas fa-store"></i> Edit Info UMKM
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Keluar Dashboard
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- END NAVBAR -->
+
+      <!-- SIDEBAR -->
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="#">Ingkung Guwosari</a>
+          </div>
+          <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+            <a href="index-1.html" class="btn btn-success btn-lg btn-block btn-icon-split">
+              <i class="fas fa-arrow-left"></i> Keluar Dashboard
+            </a>
+          </div>
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="#">IG</a>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="menu-header">Dashboard</li>
+            <li>
+              <a href="dashboard-penjual.html" class="nav-link"><i class="fas fa-store"></i><span>Dashboard
+                  UMKM</span></a>
+            </li>
+            <li class="menu-header">Menu Pintasan</li>
+            <li class="active">
+              <a href="kelola-produk.html" class="nav-link"><i class="fas fa-tasks"></i><span>Kelola Produk</span></a>
+            </li>
+            <li>
+              <a href="#" class="nav-link"><i class="fas fa-clipboard-list"></i><span>Penjualan</span></a>
+            </li>
+            <li>
+              <a href="#" class="nav-link"><i class="fas fa-chart-bar"></i><span>Statistik</span></a>
+            </li>
+            <li>
+              <a href="#" class="nav-link"><i class="fas fa-users"></i><span>Ulasan Pembeli</span></a>
+            </li>
+            <li>
+              <a href="#" class="nav-link"><i class="fas fa-headphones-alt"></i><span>Pusat Bantuan</span></a>
+            </li>
+            <li>
+              <a href="#" class="nav-link"><i class="fas fa-chalkboard-teacher"></i><span> Edukasi UMKM</span></a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <!-- END SIDEBAR -->
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-header">
+            <h5>Kelola Produk</h5>
+            <div class="section-header-breadcrumb">
+              <div class="breadcrumb-item"><a href="#">Dashboard Seller</a></div>
+              <div class="breadcrumb-item">Kelola Produk</div>
+            </div>
+          </div>
+
+          <div class="section-body">
+
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header d-flex justify-content-between">
+                    <h4>Daftar Produk</h4>
+                    <a href="#" class="btn btn-lg btn-success">
+                      <i class="fa fa-plus" aria-hidden="true"></i> Tambah Produk
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-striped" id="table-2">
+                        <thead>
+                          <tr>
+                            <th class="text-center">
+                              <div class="custom-checkbox custom-control">
+                                <input type="checkbox" data-checkboxes="mygroup" data-checkbox-role="dad"
+                                  class="custom-control-input" id="checkbox-all">
+                                <label for="checkbox-all" class="custom-control-label">&nbsp;</label>
+                              </div>
+                            </th>
+                            <th>Info Produk</th>
+                            <th>Kategori</th>
+                            <th>Harga</th>
+                            <th>Stok</th>
+                            <th>Aktif</th>
+                            <th>Aksi</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="custom-checkbox custom-control">
+                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                                  id="checkbox-1">
+                                <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td class="d-flex">
+                              <img src="https://cf.shopee.co.id/file/eb889d087028270f1acf9a15aa0a8757" alt=""
+                                class="rounded mr-3" width="70px" height="70px">
+                              <div>
+                                <strong>Batik Gamis Modern Wanita</strong>
+                                <p class="text-muted">Pembelian 2 pcs gratis kerudung</p>
+                              </div>
+                            </td>
+                            <td>
+                              Pakaian Wanita
+                            </td>
+                            <td>
+                              Rp.200.000
+                            </td>
+                            <td>15</td>
+                            <td>
+                              <div class="form-group">
+                                <label class="custom-switch mt-2">
+                                  <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input">
+                                  <span class="custom-switch-indicator"></span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
+                                  aria-haspopup="true" aria-expanded="false">
+                                  Pilihan
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Edit Produk</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad Nauval
+            Azhar</a>
+        </div>
+        <div class="footer-right">
+
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="assets/modules/jquery.min.js"></script>
+  <script src="assets/modules/popper.js"></script>
+  <script src="assets/modules/tooltip.js"></script>
+  <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="assets/modules/moment.min.js"></script>
+  <script src="assets/js/stisla.js"></script>
+
+  <!-- JS Libraies -->
+  <script src="assets/modules/datatables/datatables.min.js"></script>
+  <script src="assets/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+  <script src="assets/modules/datatables/Select-1.2.4/js/dataTables.select.min.js"></script>
+  <script src="assets/modules/jquery-ui/jquery-ui.min.js"></script>
+
+  <!-- Page Specific JS File -->
+  <script src="assets/js/page/modules-datatables.js"></script>
+
+  <!-- Template JS File -->
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
