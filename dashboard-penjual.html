@@ -140,6 +140,18 @@
               <a href="#" class="nav-link"><i class="fas fa-tasks"></i><span>Kelola Produk</span></a>
             </li>
             <li>
+              <a href="#" class="nav-link"><i class="fas fa-clipboard-list"></i><span>Penjualan</span></a>
+            </li>
+            <li>
+              <a href="#" class="nav-link"><i class="fas fa-chart-bar"></i><span>Statistik</span></a>
+            </li>
+            <li>
+              <a href="#" class="nav-link"><i class="fas fa-users"></i><span>Ulasan Pembeli</span></a>
+            </li>
+            <li>
+              <a href="#" class="nav-link"><i class="fas fa-headphones-alt"></i><span>Pusat Bantuan</span></a>
+            </li>
+            <li>
               <a href="#" class="nav-link"><i class="fas fa-chalkboard-teacher"></i><span> Edukasi UMKM</span></a>
             </li>
           </ul>
@@ -154,38 +166,38 @@
             <div class="col-lg-4 col-md-4 col-sm-12">
               <div class="card card-statistic-2">
                 <div class="card-stats">
-                  <div class="card-stats-title">Order Statistics - 
+                  <div class="card-stats-title">Statistik Pemesanan - 
                     <div class="dropdown d-inline">
-                      <a class="font-weight-600 dropdown-toggle" data-toggle="dropdown" href="#" id="orders-month">August</a>
+                      <a class="font-weight-600 dropdown-toggle" data-toggle="dropdown" href="#" id="orders-month">Agustus</a>
                       <ul class="dropdown-menu dropdown-menu-sm">
-                        <li class="dropdown-title">Select Month</li>
-                        <li><a href="#" class="dropdown-item">January</a></li>
-                        <li><a href="#" class="dropdown-item">February</a></li>
-                        <li><a href="#" class="dropdown-item">March</a></li>
+                        <li class="dropdown-title">Pilih Bulan</li>
+                        <li><a href="#" class="dropdown-item">Januari</a></li>
+                        <li><a href="#" class="dropdown-item">Februari</a></li>
+                        <li><a href="#" class="dropdown-item">Maret</a></li>
                         <li><a href="#" class="dropdown-item">April</a></li>
-                        <li><a href="#" class="dropdown-item">May</a></li>
-                        <li><a href="#" class="dropdown-item">June</a></li>
-                        <li><a href="#" class="dropdown-item">July</a></li>
-                        <li><a href="#" class="dropdown-item active">August</a></li>
+                        <li><a href="#" class="dropdown-item">Mei</a></li>
+                        <li><a href="#" class="dropdown-item">Juni</a></li>
+                        <li><a href="#" class="dropdown-item">Juli</a></li>
+                        <li><a href="#" class="dropdown-item active">Agustus</a></li>
                         <li><a href="#" class="dropdown-item">September</a></li>
-                        <li><a href="#" class="dropdown-item">October</a></li>
+                        <li><a href="#" class="dropdown-item">Oktober</a></li>
                         <li><a href="#" class="dropdown-item">November</a></li>
-                        <li><a href="#" class="dropdown-item">December</a></li>
+                        <li><a href="#" class="dropdown-item">Desember</a></li>
                       </ul>
                     </div>
                   </div>
                   <div class="card-stats-items">
                     <div class="card-stats-item">
                       <div class="card-stats-item-count">24</div>
-                      <div class="card-stats-item-label">Pending</div>
+                      <div class="card-stats-item-label">Menunggu</div>
                     </div>
                     <div class="card-stats-item">
                       <div class="card-stats-item-count">12</div>
-                      <div class="card-stats-item-label">Shipping</div>
+                      <div class="card-stats-item-label">Proses</div>
                     </div>
                     <div class="card-stats-item">
                       <div class="card-stats-item-count">23</div>
-                      <div class="card-stats-item-label">Completed</div>
+                      <div class="card-stats-item-label">Selesai</div>
                     </div>
                   </div>
                 </div>
@@ -194,7 +206,7 @@
                 </div>
                 <div class="card-wrap">
                   <div class="card-header">
-                    <h4>Total Orders</h4>
+                    <h4>Total Dipesan</h4>
                   </div>
                   <div class="card-body">
                     59
@@ -212,10 +224,10 @@
                 </div>
                 <div class="card-wrap">
                   <div class="card-header">
-                    <h4>Balance</h4>
+                    <h4>Keuntungan</h4>
                   </div>
                   <div class="card-body">
-                    $187,13
+                    Rp.753.000
                   </div>
                 </div>
               </div>
@@ -230,10 +242,10 @@
                 </div>
                 <div class="card-wrap">
                   <div class="card-header">
-                    <h4>Sales</h4>
+                    <h4>Total Terjual</h4>
                   </div>
                   <div class="card-body">
-                    4,732
+                    584 Produk
                   </div>
                 </div>
               </div>
@@ -243,10 +255,32 @@
             <div class="col-lg-8">
               <div class="card">
                 <div class="card-header">
-                  <h4>Budget vs Sales</h4>
+                  <h4>Grafik Penjualan</h4>
                 </div>
                 <div class="card-body">
-                  <canvas id="myChart" height="158"></canvas>
+                  <canvas id="myChart"></canvas>
+                </div>
+                <div class="statistic-details">
+                  <div class="statistic-details-item">
+                    <span class="text-muted"><span class="text-primary"><i class="fas fa-caret-up"></i></span> 7%</span>
+                    <div class="detail-value">$243</div>
+                    <div class="detail-name">Today's Sales</div>
+                  </div>
+                  <div class="statistic-details-item">
+                    <span class="text-muted"><span class="text-danger"><i class="fas fa-caret-down"></i></span> 23%</span>
+                    <div class="detail-value">$2,902</div>
+                    <div class="detail-name">This Week's Sales</div>
+                  </div>
+                  <div class="statistic-details-item">
+                    <span class="text-muted"><span class="text-primary"><i class="fas fa-caret-up"></i></span>9%</span>
+                    <div class="detail-value">$12,821</div>
+                    <div class="detail-name">This Month's Sales</div>
+                  </div>
+                  <div class="statistic-details-item">
+                    <span class="text-muted"><span class="text-primary"><i class="fas fa-caret-up"></i></span> 19%</span>
+                    <div class="detail-value">$92,142</div>
+                    <div class="detail-name">This Year's Sales</div>
+                  </div>
                 </div>
               </div>
             </div>

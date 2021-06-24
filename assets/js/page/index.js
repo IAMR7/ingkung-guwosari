@@ -1,33 +1,79 @@
 "use strict";
 
-var ctx = document.getElementById("myChart").getContext('2d');
-var myChart = new Chart(ctx, {
+// var ctx = document.getElementById("myChart").getContext('2d');
+// var myChart = new Chart(ctx, {
+//   type: 'line',
+//   data: {
+//     labels: ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus"],
+//     datasets: [{
+//       label: 'Sales',
+//       data: [150, 1800, 4305, 3022, 6310, 5120, 5880, 6154],
+//       borderWidth: 2,
+//       backgroundColor: 'rgba(63,82,227,.8)',
+//       borderWidth: 0,
+//       borderColor: 'transparent',
+//       pointBorderWidth: 0,
+//       pointRadius: 3.5,
+//       pointBackgroundColor: 'transparent',
+//       pointHoverBackgroundColor: 'rgba(63,82,227,.8)',
+//     },
+//     {
+//       label: 'Budget',
+//       data: [2207, 3403, 2200, 5025, 2302, 4208, 3880, 4880],
+//       borderWidth: 2,
+//       backgroundColor: 'rgba(254,86,83,.7)',
+//       borderWidth: 0,
+//       borderColor: 'transparent',
+//       pointBorderWidth: 0 ,
+//       pointRadius: 3.5,
+//       pointBackgroundColor: 'transparent',
+//       pointHoverBackgroundColor: 'rgba(254,86,83,.8)',
+//     }]
+//   },
+//   options: {
+//     legend: {
+//       display: false
+//     },
+//     scales: {
+//       yAxes: [{
+//         gridLines: {
+//           // display: false,
+//           drawBorder: false,
+//           color: '#f2f2f2',
+//         },
+//         ticks: {
+//           beginAtZero: true,
+//           stepSize: 1500,
+//           callback: function(value, index, values) {
+//             return '$' + value;
+//           }
+//         }
+//       }],
+//       xAxes: [{
+//         gridLines: {
+//           display: false,
+//           tickMarkLength: 15,
+//         }
+//       }]
+//     },
+//   }
+// });
+
+var statistics_chart = document.getElementById("myChart").getContext('2d');
+
+var myChart = new Chart(statistics_chart, {
   type: 'line',
   data: {
-    labels: ["January", "February", "March", "April", "May", "June", "July", "August"],
+    labels: ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus"],
     datasets: [{
-      label: 'Sales',
-      data: [3200, 1800, 4305, 3022, 6310, 5120, 5880, 6154],
-      borderWidth: 2,
-      backgroundColor: 'rgba(63,82,227,.8)',
-      borderWidth: 0,
-      borderColor: 'transparent',
-      pointBorderWidth: 0,
-      pointRadius: 3.5,
-      pointBackgroundColor: 'transparent',
-      pointHoverBackgroundColor: 'rgba(63,82,227,.8)',
-    },
-    {
-      label: 'Budget',
-      data: [2207, 3403, 2200, 5025, 2302, 4208, 3880, 4880],
-      borderWidth: 2,
-      backgroundColor: 'rgba(254,86,83,.7)',
-      borderWidth: 0,
-      borderColor: 'transparent',
-      pointBorderWidth: 0 ,
-      pointRadius: 3.5,
-      pointBackgroundColor: 'transparent',
-      pointHoverBackgroundColor: 'rgba(254,86,83,.8)',
+      label: 'Produk Terjual',
+      data: [640, 387, 530, 302, 430, 270, 488, 600],
+      borderWidth: 5,
+      borderColor: '#38c5a0',
+      backgroundColor: 'transparent',
+      pointBackgroundColor: '#fff',
+      pointBorderColor: '#38c5a0',
+      pointRadius: 4
     }]
   },
   options: {
@@ -37,22 +83,17 @@ var myChart = new Chart(ctx, {
     scales: {
       yAxes: [{
         gridLines: {
-          // display: false,
+          display: false,
           drawBorder: false,
-          color: '#f2f2f2',
         },
         ticks: {
-          beginAtZero: true,
-          stepSize: 1500,
-          callback: function(value, index, values) {
-            return '$' + value;
-          }
+          stepSize: 150
         }
       }],
       xAxes: [{
         gridLines: {
-          display: false,
-          tickMarkLength: 15,
+          color: '#fbfbfb',
+          lineWidth: 2
         }
       }]
     },
