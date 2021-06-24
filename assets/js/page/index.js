@@ -109,18 +109,18 @@ balance_chart_bg_color.addColorStop(1, 'rgba(63,82,227,0)');
 var myChart = new Chart(balance_chart, {
   type: 'line',
   data: {
-    labels: ['16-07-2018', '17-07-2018', '18-07-2018', '19-07-2018', '20-07-2018', '21-07-2018', '22-07-2018', '23-07-2018', '24-07-2018', '25-07-2018', '26-07-2018', '27-07-2018', '28-07-2018', '29-07-2018', '30-07-2018', '31-07-2018'],
+    labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus'],
     datasets: [{
-      label: 'Balance',
-      data: [50, 61, 80, 50, 72, 52, 60, 41, 30, 45, 70, 40, 93, 63, 50, 62],
+      label: 'Keuntungan',
+      data: [4200000,4000000,4500000,3973000,4700000,5000000,4420000,4600000],
       backgroundColor: balance_chart_bg_color,
       borderWidth: 3,
-      borderColor: 'rgba(63,82,227,1)',
+      borderColor: '#38c5a0',
       pointBorderWidth: 0,
       pointBorderColor: 'transparent',
       pointRadius: 3,
       pointBackgroundColor: 'transparent',
-      pointHoverBackgroundColor: 'rgba(63,82,227,1)',
+      pointHoverBackgroundColor: '#38c5a0',
     }]
   },
   options: {
@@ -166,19 +166,19 @@ balance_chart_bg_color.addColorStop(1, 'rgba(63,82,227,0)');
 var myChart = new Chart(sales_chart, {
   type: 'line',
   data: {
-    labels: ['16-07-2018', '17-07-2018', '18-07-2018', '19-07-2018', '20-07-2018', '21-07-2018', '22-07-2018', '23-07-2018', '24-07-2018', '25-07-2018', '26-07-2018', '27-07-2018', '28-07-2018', '29-07-2018', '30-07-2018', '31-07-2018'],
+    labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus'],
     datasets: [{
-      label: 'Sales',
-      data: [70, 62, 44, 40, 21, 63, 82, 52, 50, 31, 70, 50, 91, 63, 51, 60],
+      label: 'Terjual',
+      data: [200,150,321,245,302,400,512,436],
       borderWidth: 2,
       backgroundColor: balance_chart_bg_color,
       borderWidth: 3,
-      borderColor: 'rgba(63,82,227,1)',
+      borderColor: '#38c5a0',
       pointBorderWidth: 0,
       pointBorderColor: 'transparent',
       pointRadius: 3,
       pointBackgroundColor: 'transparent',
-      pointHoverBackgroundColor: 'rgba(63,82,227,1)',
+      pointHoverBackgroundColor: '#38c5a0',
     }]
   },
   options: {
