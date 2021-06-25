@@ -204,7 +204,7 @@
               <div class="card-body p-5">
                 <div class="row">
                   <div class="text-justify col-lg-4 col-md-4 col-12 mr-3">
-                    <h6>Unggah Foto Produk</h6>
+                    <h6>Unggah Foto Produk <small class="badge badge-sm badge-light">Wajib</small></h6>
                     <p>
                       Format gambar .jpg .jpeg .png dan ukuran minimum 300 x 300px (Untuk gambar optimal gunakan ukuran minimum 700 x 700 px). <br><br>
                       Pilih foto produk atau tarik dan letakkan hingga 4 foto sekaligus di sini.
@@ -241,9 +241,9 @@
             </div>
             <div class="card">
               <div class="card-body p-5">
-                <div class="row">
+                <div class="row mb-4">
                   <div class="text-justify col-lg-4 col-md-4 col-12">
-                    <h6>Nama Produk</h6>
+                    <h6>Nama Produk <small class="badge badge-sm badge-light">Wajib</small></h6>
                     <p>
                       Nama min. 5 kata, terdiri dari jenis produk, merek, dan keterangan seperti warna, bahan, atau tipe.
                     </p>
@@ -253,6 +253,113 @@
                       <input type="text"
                         class="form-control" placeholder="Contoh: Sepatu Casual Pria">
                       <small id="helpId" class="form-text text-muted">0/70</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Kategori <small class="badge badge-sm badge-light">Wajib</small></h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <div class="form-group">
+                      <select class="form-control select2">
+                        <option>Makanan</option>
+                        <option>Minuman</option>
+                        <option>Pakaian Pria</option>
+                        <option>Pakaian Wanita</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Kondisi</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-4 col-12">
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked>
+                      <label class="custom-control-label" for="customRadioInline1">Baru</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                      <label class="custom-control-label" for="customRadioInline2">Bekas</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Deskripsi <small class="badge badge-sm badge-light">Wajib</small></h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <div class="form-group">
+                      <textarea class="form-control" name="" id="" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Kelengkapan</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <div class="form-group">
+                      <textarea class="form-control" name="" id="" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Catatan Produk</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <div class="form-group">
+                      <textarea class="form-control" name="" id="" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body p-5">
+                <div class="row mb-4">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Minimal Pemesanan</h6><br>
+                    <p>
+                      Masukkan jumlah minimum pemesanan yang harus dibeli untuk produk ini.
+                    </p>
+                  </div>
+                  <div class="col-lg-8 col-md-4 col-12">
+                    <div class="form-group">
+                      <input type="number" class="form-control" value="1">
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Harga Satuan <small class="badge badge-sm badge-light">Wajib</small></h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text bg-light">
+                          <strong>Rp</strong>
+                        </div>
+                      </div>
+                      <input type="number" class="form-control currency" placeholder="Contoh: 200.000">
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Potongan Diskon</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text bg-light">
+                          <strong>%</strong>
+                        </div>
+                      </div>
+                      <input type="number" class="form-control currency" placeholder="Masukkkan Persentase Diskon">
                     </div>
                   </div>
                 </div>
