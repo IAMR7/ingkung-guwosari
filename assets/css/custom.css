@@ -301,6 +301,17 @@ div.text-widget-edukasi p {
     margin-top: 7px;
 }
 
+/* TAMBAH PRODUK */
+div.upload-foto-produk {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+div.upload-foto-produk img {
+    width: 100%;
+    height: 100%;
+}
+
 @media (min-width: 992px) {
     div.main-content {
         margin-top: 0;
@@ -386,6 +397,15 @@ div.text-widget-edukasi p {
 
     div.form-daftar-umkm {
         width: 60%;
+    }
+
+    div.upload-foto-produk {
+        width: 16%;
+    }
+
+    div.upload-foto-produk img {
+        width: 123px;
+        height: 123px;
     }
 
 }

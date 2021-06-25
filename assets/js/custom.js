@@ -73,29 +73,38 @@ jQuery(function ($) {
 });
 
 //Multi Upload Daftar UMKM
-var loadFile = function(event) {
+var previewGambar = function(event) {
     var reader = new FileReader();
     reader.onload = function(){
-      var uploadDaftarUmkmSatu = document.getElementById('upload-daftar-umkm-1');
-      uploadDaftarUmkmSatu.src = reader.result;
+      var uploadGambarSatu = document.getElementById('upload-gambar-1');
+      uploadGambarSatu.src = reader.result;
     };
     reader.readAsDataURL(event.target.files[0]);
 };
 
-var loadFileDua = function(event) {
+var previewGambarDua = function(event) {
     var reader = new FileReader();
     reader.onload = function(){
-      var uploadDaftarUmkmDua = document.getElementById('upload-daftar-umkm-2');
-      uploadDaftarUmkmDua.src = reader.result;
+      var uploadGambarDua = document.getElementById('upload-gambar-2');
+      uploadGambarDua.src = reader.result;
     };
     reader.readAsDataURL(event.target.files[0]);
 };
 
-var loadFileTiga = function(event) {
+var previewGambarTiga = function(event) {
     var reader = new FileReader();
     reader.onload = function(){
-      var uploadDaftarUmkmTiga = document.getElementById('upload-daftar-umkm-3');
-      uploadDaftarUmkmTiga.src = reader.result;
+      var uploadGambarTiga = document.getElementById('upload-gambar-3');
+      uploadGambarTiga.src = reader.result;
+    };
+    reader.readAsDataURL(event.target.files[0]);
+};
+
+var previewGambarEmpat = function(event) {
+    var reader = new FileReader();
+    reader.onload = function(){
+      var uploadGambarEmpat = document.getElementById('upload-gambar-4');
+      uploadGambarEmpat.src = reader.result;
     };
     reader.readAsDataURL(event.target.files[0]);
 };
