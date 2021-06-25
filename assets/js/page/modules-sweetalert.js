@@ -131,3 +131,25 @@ $("#swal-daftar-umkm").click(function() {
       }
     });
 });
+
+$("#swal-simpan-produk").click(function() {
+  swal({
+      title: 'Apakah Produk Sudah Benar ?',
+      text: 'Setelah menekan "OK" produk akan langsung masuk kedalam daftar',
+      icon: 'warning',
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+      swal('Produk Berhasil Ditambahkan! Silahkan melihat kembali daftar produk', {
+        icon: 'success',
+      });
+      setTimeout(function(){ 
+        window.location.href = "kelola-produk.html";
+      }, 2500);
+      } else {
+      swal('Membatalkan menyimpan produk');
+      }
+    });
+});
