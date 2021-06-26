@@ -9,6 +9,7 @@
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/modules/chocolat/dist/css/chocolat.css">
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
@@ -193,7 +194,7 @@
                     <a class="nav-link" id="home-tab2" data-toggle="tab" href="#home2" role="tab" aria-controls="home" aria-selected="true">Semua Pesanan</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" id="profile-tab2" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile" aria-selected="false">Pesanan Baru</a>
+                    <a class="nav-link active" id="profile-tab2" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile" aria-selected="false">Pesanan Baru <div class="bullet text-warning"></div></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" id="contact-tab2" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact" aria-selected="false">Dalam Pengiriman</a>
@@ -227,8 +228,15 @@
                           </button>
                         </div>
                         <div class="col-lg-3 col-md-3 col-12">
-                          <img src="https://mmc.tirto.id/image/2016/05/11/LogoBRI_050_ratio-16x9.JPG" alt="" width="100px" height="45px">
-                          <img src="https://i1.wp.com/masmedia.xyz/wp-content/uploads/2020/12/Contoh-Bukti-Transfer-BRI-Asli-atau-Palsu.jpg" alt="" class="rounded mt-2" width="100px">
+                          <img src="https://mmc.tirto.id/image/2016/05/11/LogoBRI_050_ratio-16x9.JPG" alt="" width="180px" height="50px">
+                          <div class="chocolat-parent mt-3">
+                            <a href="https://i1.wp.com/masmedia.xyz/wp-content/uploads/2020/12/Contoh-Bukti-Transfer-BRI-Asli-atau-Palsu.jpg" class="chocolat-image" title="Bukti Transfer">
+                              <div data-crop-image="285">
+                                <img alt="image" src="https://i1.wp.com/masmedia.xyz/wp-content/uploads/2020/12/Contoh-Bukti-Transfer-BRI-Asli-atau-Palsu.jpg" class="img-fluid rounded">
+                              </div>
+                            </a>
+                          </div>
+                          <!-- <img src="https://i1.wp.com/masmedia.xyz/wp-content/uploads/2020/12/Contoh-Bukti-Transfer-BRI-Asli-atau-Palsu.jpg" alt="" class="rounded mt-2" width="100px"> -->
                         </div>
                       </div>
                     </div>
@@ -268,6 +276,7 @@
   <script src="assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
   <script src="assets/modules/moment.min.js"></script>
   <script src="assets/js/stisla.js"></script>
+  <script src="assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/custom.js"></script>
 </body>
