@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Tambah Produk Baru-Erisa Batik</title>
+  <title>Edit Produk-Erisa Batik</title>
 
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
@@ -188,18 +188,16 @@
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h5>Tambah Produk</h5>
+            <h5>Edit Produk</h5>
             <div class="section-header-breadcrumb">
               <div class="breadcrumb-item"><a href="#">Dashboard UMKM</a></div>
-              <div class="breadcrumb-item">Tambah Produk</div>
+              <div class="breadcrumb-item"><a href="#">Daftar Produk</a></div>
+              <div class="breadcrumb-item">Edit Produk</div>
             </div>
           </div>
 
           <div class="section-body">
-            <h2 class="section-title">Tips Penting !</h2>
-            <p class="section-lead">
-              Isikan data informasi produk dengan detail dan jelas agar pembeli lebih tertarik mengunjungi
-            </p>
+
             <div class="card">
               <div class="card-body p-5">
                 <h5 class="mb-5">Unggah Produk</h5>
@@ -207,34 +205,32 @@
                   <div class="text-justify col-lg-4 col-md-4 col-12 mr-3">
                     <h6>Foto Produk <small class="badge badge-sm badge-light">Wajib</small></h6>
                     <p>
-                      Format gambar .jpg .jpeg .png dan ukuran minimum 300 x 300px (Untuk gambar optimal gunakan ukuran minimum 700 x 700 px). <br><br>
+                      Format gambar .jpg .jpeg .png dan ukuran minimum 300 x 300px (Untuk gambar optimal gunakan ukuran
+                      minimum 700 x 700 px). <br><br>
                       Pilih foto produk atau tarik dan letakkan hingga 4 foto sekaligus di sini.
                     </p>
                   </div>
                   <div class="row col-lg-8 col-md-8 col-12">
                     <div class="form-group upload-foto-produk col-lg-3 col-md-6 col-12">
                       <label for="">Foto Utama</label>
-                      <input type="file" accept="image/*" onchange="previewGambar(event)"
-                        class="form-control mb-3">
-                      <img class="image image-default mb-3" src="" alt="" id="upload-gambar-1">
+                      <input type="file" accept="image/*" onchange="previewGambar(event)" class="form-control mb-3">
+                      <img class="image image-default-produk mb-3" src="" alt="" id="upload-gambar-1">
                     </div>
                     <div class="form-group upload-foto-produk col-lg-3 col-md-6 col-12">
                       <label for="">Foto Tambahan</label>
-                      <input type="file" accept="image/*" onchange="previewGambarDua(event)"
-                        class="form-control mb-3">
-                      <img class="image image-default mb-3" src="" alt="" id="upload-gambar-2">
+                      <input type="file" accept="image/*" onchange="previewGambarDua(event)" class="form-control mb-3">
+                      <img class="image image-default-produk-2 mb-3" src="" alt="" id="upload-gambar-2">
                     </div>
                     <div class="form-group upload-foto-produk col-lg-3 col-md-6 col-12">
                       <label for="">Foto Tambahan </label>
-                      <input type="file" accept="image/*" onchange="previewGambarTiga(event)"
-                        class="form-control mb-3">
-                      <img class="image image-default mb-3" src="" alt="" id="upload-gambar-3">
+                      <input type="file" accept="image/*" onchange="previewGambarTiga(event)" class="form-control mb-3">
+                      <img class="image image-default-produk-3 mb-3" src="" alt="" id="upload-gambar-3">
                     </div>
                     <div class="form-group upload-foto-produk col-lg-3 col-md-6 col-12">
                       <label for="">Foto Tambahan </label>
                       <input type="file" accept="image/*" onchange="previewGambarEmpat(event)"
                         class="form-control mb-3">
-                      <img class="image image-default mb-3" src="" alt="" id="upload-gambar-4">
+                      <img class="image image-default-produk-4 mb-3" src="" alt="" id="upload-gambar-4">
                     </div>
                   </div>
                 </div>
@@ -247,13 +243,13 @@
                   <div class="text-justify col-lg-4 col-md-4 col-12">
                     <h6>Nama Produk <small class="badge badge-sm badge-light">Wajib</small></h6>
                     <p>
-                      Nama min. 5 kata, terdiri dari jenis produk, merek, dan keterangan seperti warna, bahan, atau tipe.
+                      Nama min. 5 kata, terdiri dari jenis produk, merek, dan keterangan seperti warna, bahan, atau
+                      tipe.
                     </p>
                   </div>
                   <div class="col-lg-8 col-md-8 col-12">
                     <div class="form-group">
-                      <input type="text"
-                        class="form-control" placeholder="Contoh: Sepatu Casual Pria">
+                      <input type="text" class="form-control" value="Blouse Batik Wanita Ukuran Besar">
                       <small id="helpId" class="form-text text-muted">0/70</small>
                     </div>
                   </div>
@@ -268,7 +264,7 @@
                         <option>Makanan</option>
                         <option>Minuman</option>
                         <option>Pakaian Pria</option>
-                        <option>Pakaian Wanita</option>
+                        <option selected>Pakaian Wanita</option>
                       </select>
                     </div>
                   </div>
@@ -279,11 +275,13 @@
                   </div>
                   <div class="col-lg-8 col-md-4 col-12">
                     <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked>
+                      <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input"
+                        checked>
                       <label class="custom-control-label" for="customRadioInline1">Baru</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                      <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                        class="custom-control-input">
                       <label class="custom-control-label" for="customRadioInline2">Bekas</label>
                     </div>
                   </div>
@@ -294,7 +292,22 @@
                   </div>
                   <div class="col-lg-8 col-md-8 col-12">
                     <div class="form-group">
-                      <textarea class="form-control" name="" id="" rows="3"></textarea>
+                      <textarea class="form-control" name="" id="" rows="3">Barang ready bukan pre-order. Langsung klik beli dan pasti kami kirim di hari yang sama, 1 minggu 7 hari kerja, no libur-libur club kirim terus.
+
+                        Deskripsi produk
+
+                        Tersedia size M L XL
+
+                        Lingkar dada
+                        M: 98cm-100cm
+                        L: 102cm-104cm
+                        XL: 104cm-106
+
+                        Bahan katun batik tetap adem dipakai saat anda berkeringat.
+
+                        Menerima pesanan batik partai besar harga grosir.
+                        Sedia aneka Fashion Batik
+                      </textarea>
                     </div>
                   </div>
                 </div>
@@ -347,7 +360,7 @@
                           <strong>Rp</strong>
                         </div>
                       </div>
-                      <input type="number" class="form-control currency" placeholder="Contoh: 200.000">
+                      <input type="number" class="form-control currency" value="90.000">
                     </div>
                   </div>
                 </div>
@@ -362,7 +375,7 @@
                           <strong>%</strong>
                         </div>
                       </div>
-                      <input type="number" class="form-control" placeholder="Masukkkan Persentase Diskon 1-99%">
+                      <input type="number" class="form-control" value="5">
                     </div>
                   </div>
                 </div>
@@ -395,7 +408,7 @@
                   </div>
                   <div class="col-lg-8 col-md-4 col-12">
                     <div class="form-group">
-                      <input type="number" class="form-control" placeholder="Masukkan Jumlah Stok Ketersediaan Produk">
+                      <input type="number" class="form-control" value="20">
                     </div>
                   </div>
                 </div>
@@ -411,49 +424,58 @@
                       <div class="row gutters-sm">
                         <div class="col-6 col-sm-4">
                           <label class="imagecheck mb-4">
-                            <input name="imagecheck" type="checkbox" value="1" class="imagecheck-input"  />
+                            <input name="imagecheck" type="checkbox" value="1" class="imagecheck-input" checked />
                             <figure class="imagecheck-figure">
-                              <img src="https://vectrostudio.com/wp-content/uploads/2020/01/JNE-Logo_vectrostudio.jpg" alt="}" class="imagecheck-image">
+                              <img src="https://vectrostudio.com/wp-content/uploads/2020/01/JNE-Logo_vectrostudio.jpg"
+                                alt="}" class="imagecheck-image">
                             </figure>
                           </label>
                         </div>
                         <div class="col-6 col-sm-4">
                           <label class="imagecheck mb-4">
-                            <input name="imagecheck" type="checkbox" value="2" class="imagecheck-input"  checked />
+                            <input name="imagecheck" type="checkbox" value="2" class="imagecheck-input" checked />
                             <figure class="imagecheck-figure">
-                              <img src="https://assets-a1.kompasiana.com/items/album/2019/12/22/untitled-5dfe503b097f36297805be43.png" alt="}" class="imagecheck-image">
+                              <img
+                                src="https://assets-a1.kompasiana.com/items/album/2019/12/22/untitled-5dfe503b097f36297805be43.png"
+                                alt="}" class="imagecheck-image">
                             </figure>
                           </label>
                         </div>
                         <div class="col-6 col-sm-4">
                           <label class="imagecheck mb-4">
-                            <input name="imagecheck" type="checkbox" value="3" class="imagecheck-input"  />
+                            <input name="imagecheck" type="checkbox" value="3" class="imagecheck-input" />
                             <figure class="imagecheck-figure">
-                              <img src="https://3.bp.blogspot.com/-JgE5OIyHWzk/W_YcheR36ZI/AAAAAAAAQLM/nBKvNQKz7wwYYtZTBYzMZUAMyRO12PSjQCLcBGAs/s1600/Ninja%2BXpress.png" alt="}" class="imagecheck-image">
+                              <img
+                                src="https://3.bp.blogspot.com/-JgE5OIyHWzk/W_YcheR36ZI/AAAAAAAAQLM/nBKvNQKz7wwYYtZTBYzMZUAMyRO12PSjQCLcBGAs/s1600/Ninja%2BXpress.png"
+                                alt="}" class="imagecheck-image">
                             </figure>
                           </label>
                         </div>
                         <div class="col-6 col-sm-4">
                           <label class="imagecheck mb-4">
-                            <input name="imagecheck" type="checkbox" value="4" class="imagecheck-input"  checked />
+                            <input name="imagecheck" type="checkbox" value="4" class="imagecheck-input" />
                             <figure class="imagecheck-figure">
-                              <img src="https://upload.wikimedia.org/wikipedia/id/thumb/0/00/Pos-Indonesia.svg/1200px-Pos-Indonesia.svg.png" alt="}" class="imagecheck-image">
+                              <img
+                                src="https://upload.wikimedia.org/wikipedia/id/thumb/0/00/Pos-Indonesia.svg/1200px-Pos-Indonesia.svg.png"
+                                alt="}" class="imagecheck-image">
                             </figure>
                           </label>
                         </div>
                         <div class="col-6 col-sm-4">
                           <label class="imagecheck mb-4">
-                            <input name="imagecheck" type="checkbox" value="5" class="imagecheck-input"  />
+                            <input name="imagecheck" type="checkbox" value="5" class="imagecheck-input" checked />
                             <figure class="imagecheck-figure">
-                              <img src="https://www.grab.com/id/wp-content/uploads/sites/7/2016/07/Slide-18-GE.jpg" alt="}" class="imagecheck-image">
+                              <img src="https://www.grab.com/id/wp-content/uploads/sites/7/2016/07/Slide-18-GE.jpg"
+                                alt="}" class="imagecheck-image">
                             </figure>
                           </label>
                         </div>
                         <div class="col-6 col-sm-4">
                           <label class="imagecheck mb-4">
-                            <input name="imagecheck" type="checkbox" value="6" class="imagecheck-input"  />
+                            <input name="imagecheck" type="checkbox" value="6" class="imagecheck-input" checked />
                             <figure class="imagecheck-figure">
-                              <img src="https://i.ytimg.com/vi/DcwlNMN-al0/hqdefault.jpg" alt="}" class="imagecheck-image">
+                              <img src="https://i.ytimg.com/vi/DcwlNMN-al0/hqdefault.jpg" alt="}"
+                                class="imagecheck-image">
                             </figure>
                           </label>
                         </div>
@@ -503,8 +525,9 @@
   <script src="assets/modules/jquery-selectric/jquery.selectric.min.js"></script>
 
   <script src="assets/js/page/forms-advanced-forms.js"></script>
-  
+
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/custom.js"></script>
 </body>
+
 </html>

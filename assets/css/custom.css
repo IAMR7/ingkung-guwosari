@@ -287,6 +287,34 @@ img.image-default {
     background-position: center;
 }
 
+img.image-default-produk {
+    background: url("https://id-test-11.slatic.net/p/a190f322c6649f55c3700d8ea1c4c6f2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+img.image-default-produk-2 {
+    background: url("https://cf.shopee.co.id/file/b223c979482dee4470e80afda28c5eed");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+img.image-default-produk-3 {
+    background: url("https://s4.bukalapak.com/img/9762364239/large/Jual_Batik_wanita_jumbo__batik_jumbo_wanita_modern__batik_le.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+img.image-default-produk-4 {
+    background: url("https://cf.shopee.co.id/file/5f3e28f3562e413d747f31f183f81b15");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* DASHBOARD UMKM */
 div.widget-edukasi img {
     border-radius: 10px;

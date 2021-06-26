@@ -108,3 +108,27 @@ var previewGambarEmpat = function(event) {
     };
     reader.readAsDataURL(event.target.files[0]);
 };
+
+function uploadFile (data) {
+    // define data and connections
+var blob = new Blob([JSON.stringify(data)]);
+var url = URL.createObjectURL(blob);
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'myForm.php', true);
+
+    // define new form
+var formData = new FormData();
+formData.append('someUploadIdentifier', blob, 'someFileName.json');
+    
+    // action after uploading happens
+xhr.onload = function(e) {
+    console.log("File uploading completed!");
+};
+
+    // do the uploading
+console.log("File uploading started!");
+xhr.send(formData);
+}
+
+// This data/text below is local to the JS script, so we are allowed to send it!
+uploadFile({'hello!':'how are you?'});
