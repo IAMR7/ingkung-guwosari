@@ -340,6 +340,13 @@ div.upload-foto-produk img {
     height: 100%;
 }
 
+/* PENJUALAN */
+div.pesanan-baru {
+    border: solid 1px rgb(232, 232, 232);
+    border-radius: 15px;
+    padding: 30px;
+}
+
 @media (min-width: 992px) {
     div.main-content {
         margin-top: 0;
