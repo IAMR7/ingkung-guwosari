@@ -46,18 +46,23 @@ $("#chat-form").submit(function() {
   return false;
 });
 
+// CHAT PENJUAL
 var chats = [
   {
-    text: 'Selamat datang di Ingkung Kuali, ada yang bisa kami bantu ?',
+    text: 'Halo kak, Batik gamisnya ada ?',
     position: 'left'
   },
   {
-    text: 'Paket ingkung original nya masih ada ?',
+    text: 'Masih ada kak, mau yang model gimana',
     position: 'right'
   },
   {
-    text: 'Nggih mas/mbak masih ada',
+    text: 'Yang dapet kerudung dan blouse nya itu kak',
     position: 'left'
+  },
+  {
+    text: 'Oooh itu kebetulan stoknya kosong kak, adanya yang model atasan saja',
+    position: 'right'
   },
 ];
 for(var i = 0; i < chats.length; i++) {
@@ -65,7 +70,7 @@ for(var i = 0; i < chats.length; i++) {
   if(chats[i].typing != undefined) type = 'typing';
   $.chatCtrl('#mychatbox2', {
     text: (chats[i].text != undefined ? chats[i].text : ''),
-    picture: (chats[i].position == 'left' ? '.../dist/img/avatar/avatar-5.png' : '../dist/img/avatar/avatar-2.png'),
+    picture: (chats[i].position == 'left' ? 'https://media-exp1.licdn.com/dms/image/C5103AQHuaOhr9MFJMA/profile-displayphoto-shrink_200_200/0/1538807129666?e=1628121600&v=beta&t=TwSg7xaLHzooulZbhQoXB4bce5m0_b-qdpssywcVRkY' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbXQr_WMRVbfOokFa-HWqdrQGb5pDUkyoG9A&usqp=CAU'),
     position: 'chat-'+chats[i].position,
     type: type
   });
@@ -76,7 +81,7 @@ $("#chat-form2").submit(function() {
   if(me.find('input').val().trim().length > 0) {      
     $.chatCtrl('#mychatbox2', {
       text: me.find('input').val(),
-      picture: '../dist/img/avatar/avatar-2.png',
+      picture: 'http://www.baliutd.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png',
     });
     me.find('input').val('');
   } 
