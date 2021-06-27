@@ -347,6 +347,13 @@ div.pesanan-baru {
     padding: 30px;
 }
 
+/* CHAT PENJUAL */
+li.media div.media-body p {
+    font-size: 0.8em;
+    line-height: 1.90em;
+    margin-top: 15px;
+}
+
 @media (min-width: 992px) {
     div.main-content {
         margin-top: 0;
