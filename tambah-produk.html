@@ -6,19 +6,18 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
   <title>Tambah Produk Baru-Erisa Batik</title>
 
-  <!-- General CSS Files -->
+  <!-- CSS UMUM -->
   <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
 
-  <!-- CSS Libraries -->
-  <link rel="stylesheet" href="assets/modules/bootstrap-daterangepicker/daterangepicker.css">
-  <link rel="stylesheet" href="assets/modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+  <!-- CSS LIBRARY -->
   <link rel="stylesheet" href="assets/modules/select2/dist/css/select2.min.css">
   <link rel="stylesheet" href="assets/modules/jquery-selectric/selectric.css">
-  <link rel="stylesheet" href="assets/modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
-  <link rel="stylesheet" href="assets/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
 
-  <!-- Template CSS -->
+  <!-- CSS BOXICONS -->
+  <link rel="stylesheet" href="assets/modules/boxicons-2.0.7/css/boxicons.css">
+
+  <!-- CSS CUSTOM HALAMAN -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
   <link rel="stylesheet" href="assets/css/custom.css">
@@ -34,31 +33,23 @@
         <form class="form-inline mr-auto">
           <ul class="navbar-nav mr-3">
             <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
-            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i
-                  class="fas fa-search"></i></a></li>
+            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
           </ul>
           <div class="search-element">
-            <input class="form-control" type="search" placeholder="Cari Sesuatu Disini" aria-label="Search"
-              data-width="250">
+            <input class="form-control" type="search" placeholder="Cari Sesuatu Disini" aria-label="Search" data-width="250">
             <button class="btn" type="submit"><i class="fas fa-search"></i></button>
             <div class="search-backdrop"></div>
           </div>
         </form>
         <ul class="navbar-nav navbar-right">
-          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
-              class="nav-link nav-link-lg message-toggle beep"><i class="far fa-envelope"></i></a>
+
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle beep"><i class="bx bx-chat"></i></a>
             <div class="dropdown-menu dropdown-list dropdown-menu-right">
-              <div class="dropdown-header">Pesan
-                <div class="float-right">
-                  <a href="#">Tandai Semua Sudah Dibaca</a>
-                </div>
-              </div>
+              <div class="dropdown-header">Pesan Masuk (2)</div>
               <div class="dropdown-list-content dropdown-list-message">
                 <a href="#" class="dropdown-item dropdown-item-unread">
                   <div class="dropdown-item-avatar">
-                    <img alt="image"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOfXsvJz_2Xd6SKqH6LCkQs2_9rd__b1PDXw&usqp=CAU"
-                      class="rounded-circle">
+                    <img alt="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOfXsvJz_2Xd6SKqH6LCkQs2_9rd__b1PDXw&usqp=CAU" class="rounded-circle">
                     <div class="is-online"></div>
                   </div>
                   <div class="dropdown-item-desc">
@@ -69,9 +60,7 @@
                 </a>
                 <a href="#" class="dropdown-item dropdown-item-unread">
                   <div class="dropdown-item-avatar">
-                    <img alt="image"
-                      src="https://media-exp1.licdn.com/dms/image/C5103AQGsMFce4zMF-w/profile-displayphoto-shrink_200_200/0/1517348277979?e=1626912000&v=beta&t=vb1gX9xMrDKOTKBp4-DTbB9PXGMLZCycfdENXVZX8Qk"
-                      class="rounded-circle">
+                    <img alt="image" src="https://media-exp1.licdn.com/dms/image/C5103AQGsMFce4zMF-w/profile-displayphoto-shrink_200_200/0/1517348277979?e=1626912000&v=beta&t=vb1gX9xMrDKOTKBp4-DTbB9PXGMLZCycfdENXVZX8Qk" class="rounded-circle">
                   </div>
                   <div class="dropdown-item-desc">
                     <b>Henny Trisnadewi</b>
@@ -85,12 +74,11 @@
               </div>
             </div>
           </li>
-          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
-              class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="bx bx-bell"></i></a>
             <div class="dropdown-menu dropdown-list dropdown-menu-right">
-              <div class="dropdown-header">Pemberitahuan
+              <div class="dropdown-header">Notifikasi (1)
                 <div class="float-right">
-                  <a href="#">Tandai Semua Sudah Dibaca</a>
+                  <a href="#">Tandai Semua Terbaca</a>
                 </div>
               </div>
               <div class="dropdown-list-content dropdown-list-icons">
@@ -105,25 +93,18 @@
                   </div>
                 </a>
               </div>
-              <div class="dropdown-footer text-center">
-                <a href="#">Lihat Semua <i class="fas fa-chevron-right"></i></a>
-              </div>
             </div>
           </li>
-          <li class="dropdown"><a href="#" data-toggle="dropdown"
-              class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-              <img alt="image"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbXQr_WMRVbfOokFa-HWqdrQGb5pDUkyoG9A&usqp=CAU"
-                class="rounded-circle mr-1">
-              <div class="d-sm-none d-lg-inline-block">Halo, Erisa Batik</div>
-            </a>
+          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+            <img alt="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbXQr_WMRVbfOokFa-HWqdrQGb5pDUkyoG9A&usqp=CAU" class="rounded-circle mr-1">
+            <div class="d-sm-none d-lg-inline-block">Halo, Erisa Batik</div></a>
             <div class="dropdown-menu dropdown-menu-right">
               <div class="dropdown-title">Sedang Aktif</div>
               <a href="#" class="dropdown-item has-icon">
                 <i class="fas fa-store"></i> Edit Info UMKM
               </a>
               <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item has-icon text-danger">
+              <a href="index-1.html" class="dropdown-item has-icon text-danger">
                 <i class="fas fa-sign-out-alt"></i> Keluar Dashboard
               </a>
             </div>
@@ -148,11 +129,11 @@
           </div>
           <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
-            <li class="active">
+            <li>
               <a href="#" class="nav-link"><i class="fas fa-store"></i><span>Dashboard UMKM</span></a>
             </li>
             <li class="menu-header">Menu Pintasan</li>
-            <li class="dropdown">
+            <li class="dropdown active">
               <a href="#" class="nav-link has-dropdown">
                 <i class="fas fa-tasks"></i> <span>Kelola Produk</span>
               </a>
@@ -160,7 +141,7 @@
                 <li><a href="kelola-produk.html">Daftar Produk</a></li>
               </ul>
               <ul class="dropdown-menu">
-                <li><a href="tambah-produk.html">Tambah Produk</a></li>
+                <li><a class="text-success" href="tambah-produk.html">Tambah Produk</a></li>
               </ul>
             </li>
             <li>
@@ -487,7 +468,7 @@
     </div>
   </div>
 
-  <!-- General JS Scripts -->
+  <!-- MODULE JAVASCRIPT TAMBAHAN -->
   <script src="assets/modules/jquery.min.js"></script>
   <script src="assets/modules/popper.js"></script>
   <script src="assets/modules/tooltip.js"></script>
@@ -497,12 +478,11 @@
   <script src="assets/js/stisla.js"></script>
   <script src="assets/modules/sweetalert/sweetalert.min.js"></script>
   <script src="assets/js/page/modules-sweetalert.js"></script>
-
   <script src="assets/modules/select2/dist/js/select2.full.min.js"></script>
   <script src="assets/modules/jquery-selectric/jquery.selectric.min.js"></script>
-
   <script src="assets/js/page/forms-advanced-forms.js"></script>
-  
+
+  <!-- JAVASCRIPT CUSTOM HALAMAN -->
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/custom.js"></script>
 </body>
