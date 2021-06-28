@@ -368,6 +368,10 @@ img.ilus-pusat-bantuan {
     width: 100%;
 }
 
+p i.ikon-kategori-konsultasi {
+    font-size: 70px;
+}
+
 @media (min-width: 992px) {
     div.main-content {
         margin-top: 0;
