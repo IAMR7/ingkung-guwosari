@@ -356,7 +356,7 @@ li.media div.media-body p {
 
 /* TENTANG */
 div.konten-utama-tentang img {
-    width: 40%;
+    width: 100%;
 }
 
 @media (min-width: 992px) {
@@ -453,6 +453,10 @@ div.konten-utama-tentang img {
     div.upload-foto-produk img {
         width: 123px;
         height: 123px;
+    }
+
+    div.konten-utama-tentang img {
+        width: 40%;
     }
 
 }
