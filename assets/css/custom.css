@@ -359,6 +359,15 @@ div.konten-utama-tentang img {
     width: 100%;
 }
 
+/* PUSAT BANTUAN */
+input[type="text"].input-pusat-bantuan {
+    width: 55%;
+}
+
+img.ilus-pusat-bantuan {
+    width: 100%;
+}
+
 @media (min-width: 992px) {
     div.main-content {
         margin-top: 0;
