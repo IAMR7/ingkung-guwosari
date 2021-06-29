@@ -372,6 +372,10 @@ p i.ikon-kategori-konsultasi {
     font-size: 55px;
 }
 
+div.pertanyaan {
+    width: 50%;
+}
+
 @media (min-width: 992px) {
     div.main-content {
         margin-top: 0;
