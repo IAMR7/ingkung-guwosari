@@ -123,7 +123,7 @@ $("#chat-form3").submit(function() {
   if(me.find('input').val().trim().length > 0) {      
     $.chatCtrl('#mychatbox3', {
       text: me.find('input').val(),
-      picture: 'http://www.baliutd.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png',
+      picture: 'assets/img/avatar/avatar-1.png',
     });
     me.find('input').val('');
   } 
