@@ -380,6 +380,10 @@ div.pertanyaan a b {
     font-size: 14px;
 }
 
+img.ilus-chat-admin {
+    width: 100%;
+}
+
 @media (min-width: 992px) {
     div.main-content {
         margin-top: 0;
@@ -478,6 +482,10 @@ div.pertanyaan a b {
 
     div.konten-utama-tentang img {
         width: 40%;
+    }
+
+    img.ilus-chat-admin {
+        width: 35%;
     }
 
 }
