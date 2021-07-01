@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
 
+  <!-- CSS BOXICONS -->
+  <link rel="stylesheet" href="assets/modules/boxicons-2.0.7/css/boxicons.css">
+
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -26,31 +29,23 @@
         <form class="form-inline mr-auto">
           <ul class="navbar-nav mr-3">
             <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
-            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i
-                  class="fas fa-search"></i></a></li>
+            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
           </ul>
           <div class="search-element">
-            <input class="form-control" type="search" placeholder="Cari Sesuatu Disini" aria-label="Search"
-              data-width="250">
+            <input class="form-control" type="search" placeholder="Cari Sesuatu Disini" aria-label="Search" data-width="250">
             <button class="btn" type="submit"><i class="fas fa-search"></i></button>
             <div class="search-backdrop"></div>
           </div>
         </form>
         <ul class="navbar-nav navbar-right">
-          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
-              class="nav-link nav-link-lg message-toggle beep"><i class="far fa-envelope"></i></a>
+
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle beep"><i class="bx bx-chat"></i></a>
             <div class="dropdown-menu dropdown-list dropdown-menu-right">
-              <div class="dropdown-header">Pesan
-                <div class="float-right">
-                  <a href="#">Tandai Semua Sudah Dibaca</a>
-                </div>
-              </div>
+              <div class="dropdown-header">Pesan Masuk (2)</div>
               <div class="dropdown-list-content dropdown-list-message">
                 <a href="#" class="dropdown-item dropdown-item-unread">
                   <div class="dropdown-item-avatar">
-                    <img alt="image"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOfXsvJz_2Xd6SKqH6LCkQs2_9rd__b1PDXw&usqp=CAU"
-                      class="rounded-circle">
+                    <img alt="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOfXsvJz_2Xd6SKqH6LCkQs2_9rd__b1PDXw&usqp=CAU" class="rounded-circle">
                     <div class="is-online"></div>
                   </div>
                   <div class="dropdown-item-desc">
@@ -61,9 +56,7 @@
                 </a>
                 <a href="#" class="dropdown-item dropdown-item-unread">
                   <div class="dropdown-item-avatar">
-                    <img alt="image"
-                      src="https://media-exp1.licdn.com/dms/image/C5103AQGsMFce4zMF-w/profile-displayphoto-shrink_200_200/0/1517348277979?e=1626912000&v=beta&t=vb1gX9xMrDKOTKBp4-DTbB9PXGMLZCycfdENXVZX8Qk"
-                      class="rounded-circle">
+                    <img alt="image" src="https://media-exp1.licdn.com/dms/image/C5103AQGsMFce4zMF-w/profile-displayphoto-shrink_200_200/0/1517348277979?e=1626912000&v=beta&t=vb1gX9xMrDKOTKBp4-DTbB9PXGMLZCycfdENXVZX8Qk" class="rounded-circle">
                   </div>
                   <div class="dropdown-item-desc">
                     <b>Henny Trisnadewi</b>
@@ -77,12 +70,11 @@
               </div>
             </div>
           </li>
-          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
-              class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="bx bx-bell"></i></a>
             <div class="dropdown-menu dropdown-list dropdown-menu-right">
-              <div class="dropdown-header">Pemberitahuan
+              <div class="dropdown-header">Notifikasi (1)
                 <div class="float-right">
-                  <a href="#">Tandai Semua Sudah Dibaca</a>
+                  <a href="#">Tandai Semua Terbaca</a>
                 </div>
               </div>
               <div class="dropdown-list-content dropdown-list-icons">
@@ -97,25 +89,18 @@
                   </div>
                 </a>
               </div>
-              <div class="dropdown-footer text-center">
-                <a href="#">Lihat Semua <i class="fas fa-chevron-right"></i></a>
-              </div>
             </div>
           </li>
-          <li class="dropdown"><a href="#" data-toggle="dropdown"
-              class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-              <img alt="image"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbXQr_WMRVbfOokFa-HWqdrQGb5pDUkyoG9A&usqp=CAU"
-                class="rounded-circle mr-1">
-              <div class="d-sm-none d-lg-inline-block">Halo, Erisa Batik</div>
-            </a>
+          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+            <img alt="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbXQr_WMRVbfOokFa-HWqdrQGb5pDUkyoG9A&usqp=CAU" class="rounded-circle mr-1">
+            <div class="d-sm-none d-lg-inline-block">Halo, Erisa Batik</div></a>
             <div class="dropdown-menu dropdown-menu-right">
               <div class="dropdown-title">Sedang Aktif</div>
               <a href="#" class="dropdown-item has-icon">
                 <i class="fas fa-store"></i> Edit Info UMKM
               </a>
               <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item has-icon text-danger">
+              <a href="index-1.html" class="dropdown-item has-icon text-danger">
                 <i class="fas fa-sign-out-alt"></i> Keluar Dashboard
               </a>
             </div>
@@ -192,9 +177,9 @@
                   <div class="card-body">
                     <ul class="list-unstyled list-unstyled-border">
                       <li class="media">
-                        <img alt="image" class="mr-3 rounded-circle" width="50" src="https://media-exp1.licdn.com/dms/image/C5103AQHuaOhr9MFJMA/profile-displayphoto-shrink_200_200/0/1538807129666?e=1628121600&v=beta&t=TwSg7xaLHzooulZbhQoXB4bce5m0_b-qdpssywcVRkY">
+                        <img alt="image" class="mr-3 rounded-circle" width="50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOfXsvJz_2Xd6SKqH6LCkQs2_9rd__b1PDXw&usqp=CAU">
                         <div class="media-body">
-                          <div class="mt-0 mb-1 font-weight-bold">Riyani Ashari</div>
+                          <div class="mt-0 mb-1 font-weight-bold">Randi Nugraha</div>
                           <div class="text-success text-small font-600-bold"><i class="fas fa-circle"></i> Online</div>
                           <p>
                             Oooh itu kebetulan stoknya kosong kak...
