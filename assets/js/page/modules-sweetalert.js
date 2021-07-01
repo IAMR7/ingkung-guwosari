@@ -7,7 +7,7 @@ $("#swal-1").click(function() {
 $("#swal-2").click(function() {
 	swal('Terima Kasih!', 'Pesanan anda akan segera diproses', 'success');
   setTimeout(function(){ 
-    window.location.href = "index-1.html";
+    window.location.href = "invoice.html";
   }, 1500);
 });
 
