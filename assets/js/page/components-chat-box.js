@@ -49,20 +49,8 @@ $("#chat-form").submit(function() {
 // CHAT PENJUAL
 var chats = [
   {
-    text: 'Halo kak, Batik gamisnya ada ?',
+    text: 'Halo Kak, kemeja batik yang ini ready gk ya ?',
     position: 'left'
-  },
-  {
-    text: 'Masih ada kak, mau yang model gimana',
-    position: 'right'
-  },
-  {
-    text: 'Yang dapet kerudung dan blouse nya itu kak',
-    position: 'left'
-  },
-  {
-    text: 'Oooh itu kebetulan stoknya kosong kak, adanya yang model atasan saja',
-    position: 'right'
   },
 ];
 for(var i = 0; i < chats.length; i++) {
@@ -70,7 +58,7 @@ for(var i = 0; i < chats.length; i++) {
   if(chats[i].typing != undefined) type = 'typing';
   $.chatCtrl('#mychatbox2', {
     text: (chats[i].text != undefined ? chats[i].text : ''),
-    picture: (chats[i].position == 'left' ? 'https://media-exp1.licdn.com/dms/image/C5103AQHuaOhr9MFJMA/profile-displayphoto-shrink_200_200/0/1538807129666?e=1628121600&v=beta&t=TwSg7xaLHzooulZbhQoXB4bce5m0_b-qdpssywcVRkY' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbXQr_WMRVbfOokFa-HWqdrQGb5pDUkyoG9A&usqp=CAU'),
+    picture: (chats[i].position == 'left' ? 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOfXsvJz_2Xd6SKqH6LCkQs2_9rd__b1PDXw&usqp=CAU' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbXQr_WMRVbfOokFa-HWqdrQGb5pDUkyoG9A&usqp=CAU'),
     position: 'chat-'+chats[i].position,
     type: type
   });
@@ -81,7 +69,7 @@ $("#chat-form2").submit(function() {
   if(me.find('input').val().trim().length > 0) {      
     $.chatCtrl('#mychatbox2', {
       text: me.find('input').val(),
-      picture: 'http://www.baliutd.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png',
+      picture: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbXQr_WMRVbfOokFa-HWqdrQGb5pDUkyoG9A&usqp=CAU',
     });
     me.find('input').val('');
   } 
