@@ -384,6 +384,15 @@ img.ilus-chat-admin {
     width: 100%;
 }
 
+/* EDUKASI UMKM */
+a.card-konten-edukasi {
+    text-decoration: none;
+}
+
+a.card-konten-edukasi p, a.card-konten-edukasi h6 {
+    color: #6c757d;
+}
+
 @media (min-width: 992px) {
     div.main-content {
         margin-top: 0;
