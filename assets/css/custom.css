@@ -78,6 +78,16 @@ div.wisata a.produk div.card-img-overlay {
     opacity: 80%;
 }
 
+/* WISATA */
+div.cari-wisata {
+    width: 100%;
+}
+
+div.wisata-layout-kanan img {
+    width: 35%;
+    height: 30%;
+}
+
 /* DETAIL PRODUK */
 div.foto-detail-produk div.tile {
     margin-top: -100px;
@@ -394,6 +404,7 @@ a.card-konten-edukasi p, a.card-konten-edukasi h6 {
 }
 
 @media (min-width: 992px) {
+
     div.main-content {
         margin-top: 0;
     }
@@ -402,6 +413,14 @@ a.card-konten-edukasi p, a.card-konten-edukasi h6 {
         width: 800px;
         height: auto;
         overflow:unset;
+    }
+
+    div.cari-wisata {
+        width: 40%;
+    }
+
+    div.wisata-layout-kanan img {
+        width: 35%;
     }
 
     div.foto-detail-produk div.tile {
