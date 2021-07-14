@@ -399,7 +399,7 @@ a.card-konten-edukasi {
     text-decoration: none;
 }
 
-a.card-konten-edukasi p, a.card-konten-edukasi h6 {
+a.card-konten-edukasi p, a.card-konten-edukasi h6, div.card-body h5.mt-3 {
     color: #6c757d;
 }
 
