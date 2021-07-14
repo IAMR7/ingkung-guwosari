@@ -92,6 +92,10 @@ div.body-artikel-wisata {
     color: #6c757d ;
 }
 
+a.share-sosmed {
+    border-radius: 500px;
+}
+
 /* DETAIL PRODUK */
 div.foto-detail-produk div.tile {
     margin-top: -100px;
