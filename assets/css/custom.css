@@ -106,9 +106,12 @@ div.rekomendasi-wisata img {
     width: 100%;
 }
 
-div.rekomendasi-wisata h5 {
+div.rekomendasi-wisata h5, div.artikel-umum h5 {
     color: #6c757d;
 }
+
+/* ARTIKEL UMUM */
+
 
 /* DETAIL PRODUK */
 div.foto-detail-produk div.tile {
