@@ -111,7 +111,7 @@ var myChart = new Chart(balance_chart, {
   data: {
     labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus'],
     datasets: [{
-      label: 'Keuntungan',
+      label: 'Pemasukan Saldo',
       data: [4200000,4000000,4500000,3973000,4700000,5000000,4420000,4600000],
       backgroundColor: balance_chart_bg_color,
       borderWidth: 3,
@@ -168,8 +168,8 @@ var myChart = new Chart(sales_chart, {
   data: {
     labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus'],
     datasets: [{
-      label: 'Terjual',
-      data: [200,150,321,245,302,400,512,436],
+      label: 'Pengikut',
+      data: [15,25,10,7,12,30,20,32],
       borderWidth: 2,
       backgroundColor: balance_chart_bg_color,
       borderWidth: 3,
