@@ -96,6 +96,20 @@ a.share-sosmed {
     border-radius: 500px;
 }
 
+div.rekomendasi-wisata {
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 10px;
+    width: 100%;
+}
+
+div.rekomendasi-wisata img {
+    width: 100%;
+}
+
+div.rekomendasi-wisata h5 {
+    color: #6c757d;
+}
+
 /* DETAIL PRODUK */
 div.foto-detail-produk div.tile {
     margin-top: -100px;
@@ -522,6 +536,14 @@ a.card-konten-edukasi p, a.card-konten-edukasi h6, div.card-body h5.mt-3 {
 
     img.ilus-chat-admin {
         width: 35%;
+    }
+
+    div.rekomendasi-wisata {
+        width: 80%;
+    }
+
+    div.rekomendasi-wisata img {
+        width: 300px;
     }
 
 }
