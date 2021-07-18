@@ -12,6 +12,9 @@
   <!-- CSS FONT-AWESOME -->
   <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
 
+  <!-- CSS SELECTRIC -->
+  <link rel="stylesheet" href="assets/modules/jquery-selectric/selectric.css">
+
   <!-- CSS BOXICONS -->
   <link rel="stylesheet" href="assets/modules/boxicons-2.0.7/css/boxicons.css">
 
@@ -457,7 +460,31 @@
                     <hr>
                     <div class="rekening-akun">
                       <h5 class="mb-4">Ubah Informasi Rekening</h5>
-                      
+                      <div class="d-flex text-justify">
+                        <p class="text-dark mr-4">Nama Bank</p>
+                        <div class="form-group" data-width="50%">
+                          <select class="form-control selectric">
+                            <option selected>BRI</option>
+                            <option>BNI</option>
+                            <option>BCA</option>
+                            <option>Mandiri</option>
+                            <option>BSI</option>
+                            <option>BNI Syariah</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="d-flex text-justify">
+                        <p class="text-dark mr-4">Nomor Rekening</p>
+                        <div class="form-group">
+                          <input type="text" class="form-control" value="1223 4128 321 832">
+                        </div>
+                      </div>
+                      <div class="d-flex text-justify">
+                        <p class="text-dark mr-4">Atas Nama</p>
+                        <div class="form-group">
+                          <input type="text" class="form-control" value="Supriyadi Hariyanto">
+                        </div>
+                      </div>
                     </div>
                     <button id="swal-edit-profil-akun" class="btn btn-lg btn-success">
                       <i class="fa fa-save" aria-hidden="true"></i> Simpan
