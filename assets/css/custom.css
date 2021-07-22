@@ -364,6 +364,12 @@ div.text-widget-edukasi p {
     margin-top: 7px;
 }
 
+/* EDIT INFO UMKM */
+div.image-preview.foto-info-umkm {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbXQr_WMRVbfOokFa-HWqdrQGb5pDUkyoG9A&usqp=CAU");
+    background-size: cover;
+}
+
 /* TAMBAH PRODUK */
 div.upload-foto-produk {
     width: 100%;
