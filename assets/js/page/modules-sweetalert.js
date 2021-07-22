@@ -74,6 +74,13 @@ $("#swal-edit-profil-akun").click(function() {
   }, 1500);
 });
 
+$("#swal-edit-info-umkm").click(function() {
+	swal('Berhasil !', 'Informasi UMKM berhasil diperbaharui', 'success');
+  setTimeout(function(){ 
+    window.location.href = "info-umkm.html";
+  }, 1500);
+});
+
 $("#swal-ubah-password").click(function() {
 	swal('Berhasil !', 'Kata Sandi anda berhasil diubah', 'success');
   setTimeout(function(){ 
