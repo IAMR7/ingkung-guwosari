@@ -1,0 +1,580 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Penjualan-Erisa Batik</title>
+
+  <!-- CSS BOOTSTRAP -->
+  <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
+
+  <!-- CSS FONT AWESOME -->
+  <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS CHOCOLATE -->
+  <link rel="stylesheet" href="assets/modules/chocolat/dist/css/chocolat.css">
+
+  <!-- CSS BOXICONS -->
+  <link rel="stylesheet" href="assets/modules/boxicons-2.0.7/css/boxicons.css">
+
+  <!-- CSS CUSTOM HALAMAN -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      
+      <!-- NAVBAR -->
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <form class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+          </ul>
+          <div class="search-element">
+            <input class="form-control" type="search" placeholder="Cari Sesuatu Disini" aria-label="Search" data-width="250">
+            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+            <div class="search-backdrop"></div>
+          </div>
+        </form>
+        <ul class="navbar-nav navbar-right">
+
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle beep"><i class="bx bx-chat"></i></a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right">
+              <div class="dropdown-header">Pesan Masuk (2)</div>
+              <div class="dropdown-list-content dropdown-list-message">
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-avatar">
+                    <img alt="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOfXsvJz_2Xd6SKqH6LCkQs2_9rd__b1PDXw&usqp=CAU" class="rounded-circle">
+                    <div class="is-online"></div>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Randi Nugraha</b>
+                    <p>Halo Kak, kemeja batik yang ini ready gk ya?</p>
+                    <div class="time">2 Jam Yang Lalu</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-avatar">
+                    <img alt="image" src="https://media-exp1.licdn.com/dms/image/C5103AQGsMFce4zMF-w/profile-displayphoto-shrink_200_200/0/1517348277979?e=1626912000&v=beta&t=vb1gX9xMrDKOTKBp4-DTbB9PXGMLZCycfdENXVZX8Qk" class="rounded-circle">
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Henny Trisnadewi</b>
+                    <p>Ndakpapa mas biru atau hijau juga bole</p>
+                    <div class="time">1 Hari Yang Lalu</div>
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">Lihat Semua Pesan <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="bx bx-bell"></i></a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right">
+              <div class="dropdown-header">Notifikasi (1)
+                <div class="float-right">
+                  <a href="#">Tandai Semua Terbaca</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-icons">
+
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-icon bg-primary text-white">
+                    <i class="fas fa-store"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    Anda berhasil mendaftar sebagai UMKM !
+                    <div class="time text-primary">2 Menit Yang Lalu</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+            <img alt="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbXQr_WMRVbfOokFa-HWqdrQGb5pDUkyoG9A&usqp=CAU" class="rounded-circle mr-1">
+            <div class="d-sm-none d-lg-inline-block">Halo, Erisa Batik</div></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-title">Sedang Aktif</div>
+              <a href="info-umkm.html" class="dropdown-item has-icon">
+                <i class="fas fa-store"></i> Info UMKM
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="index-1.html" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Keluar Dashboard
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- END NAVBAR -->
+
+      <!-- SIDEBAR -->
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="#">Ingkung Guwosari</a>
+          </div>
+          <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+            <a href="index-1.html" class="btn btn-success btn-lg btn-block btn-icon-split">
+              <i class="fas fa-arrow-left"></i> Keluar Dashboard
+            </a>
+          </div>
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="#">IG</a>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="menu-header">Dashboard</li>
+            <li>
+              <a href="dashboard-penjual.html" class="nav-link"><i class="fas fa-store"></i><span>Dashboard UMKM</span></a>
+            </li>
+            <li class="menu-header">Menu Pintasan</li>
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown">
+                <i class="fas fa-tasks"></i> <span>Kelola Produk</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="kelola-produk.html">Daftar Produk</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li><a href="tambah-produk.html">Tambah Produk</a></li>
+              </ul>
+            </li>
+            <li class="active">
+              <a href="saldo-rekening.html" class="nav-link"><i class="fas fa-credit-card"></i><span>Info Rekening</span></a>
+            </li>
+            <li>
+              <a href="penjualan.html" class="nav-link"><i class="fas fa-clipboard-list"></i><span>Penjualan <div class="bullet text-warning"></div></span></a>
+            </li>
+            <li>
+              <a href="edukasi-umkm.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i><span> Edukasi UMKM</span></a>
+            </li>
+            <li>
+              <a href="pusat-bantuan.html" class="nav-link"><i class="fas fa-headphones-alt"></i><span>Pusat Bantuan</span></a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <!-- END SIDEBAR -->
+
+      <!-- KONTEN UTAMA -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-header">
+            <h1>Penjualan Produk</h1>
+            <div class="section-header-breadcrumb">
+              <div class="breadcrumb-item"><a href="#">Dashboard UMKM</a></div>
+              <div class="breadcrumb-item">Penjualan</div>
+            </div>
+          </div>
+
+          <div class="section-body">
+            <div class="card">
+              <div class="card-body">
+                <ul class="nav nav-tabs" id="myTab2" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link" id="home-tab2" data-toggle="tab" href="#home2" role="tab" aria-controls="home" aria-selected="true">Semua Pesanan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" id="profile-tab2" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile" aria-selected="false">Pesanan Baru <div class="bullet text-warning"></div></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contact-tab2" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact" aria-selected="false">Dalam Pengiriman</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="selesai-tab2" data-toggle="tab" href="#selesai2" role="tab" aria-controls="selesai" aria-selected="false">Pesanan Selesai</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="batal-tab2" data-toggle="tab" href="#batal2" role="tab" aria-controls="batal" aria-selected="false">Pesanan Dibatalkan</a>
+                  </li>
+                </ul>
+
+                <div class="tab-content tab-bordered" id="myTab3Content">
+
+                  <!-- SEMUA PESANAN -->
+                  <div class="tab-pane fade" id="home2" role="tabpanel" aria-labelledby="home-tab2">
+                    <div class="pesanan-baru">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-12">
+                          <img src="https://cf.shopee.co.id/file/b9bacc507621f96b297edc35802d6384" alt="" class="rounded" width="100px" height="100px">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-12">
+                          <strong>Atasan Batik Wanita-Hitam Merah</strong>
+                          <p>1x <b class="text-warning">Rp.150.000</b></p>
+                          <p class="text-muted">Catatan Pembeli:<br> "Prioritaskan yang ukuran XL dulu ya kak, kalo misal gaada ukuran L juga gapapa"</p>
+                          <div class="pengiriman mt-3 mb-3 d-flex">
+                            <img src="https://i.pinimg.com/originals/df/61/10/df6110ff540409ab0174849e6f863de3.png" alt="" width="120px" height="50px">
+                            <div>
+                              <strong>JNT EXPRESS</strong>
+                              <p>Reguler: 2-4 Hari</p>
+                            </div>
+                          </div>
+                          <button class="btn btn-success">
+                            <i class="fa fa-check" aria-hidden="true"></i> Terima Pesanan
+                          </button>
+                          <button class="btn btn-danger">
+                            <i class="fa fa-times" aria-hidden="true"></i> Tolak
+                          </button>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-12">
+                          <img src="https://mmc.tirto.id/image/2016/05/11/LogoBRI_050_ratio-16x9.JPG" alt="" width="180px" height="50px">
+                          <div class="chocolat-parent mt-3">
+                            <a href="https://i1.wp.com/masmedia.xyz/wp-content/uploads/2020/12/Contoh-Bukti-Transfer-BRI-Asli-atau-Palsu.jpg" class="chocolat-image" title="Bukti Transfer">
+                              <div data-crop-image="285">
+                                <img alt="image" src="https://i1.wp.com/masmedia.xyz/wp-content/uploads/2020/12/Contoh-Bukti-Transfer-BRI-Asli-atau-Palsu.jpg" class="img-fluid rounded">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pesanan-baru mt-4">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-12">
+                          <img src="https://cf.shopee.co.id/file/5ebdb5b539541cb4137803bcc43d8d48" alt="" class="rounded" width="100px" height="100px">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-12">
+                          <strong>Hem Batik Pria Lengan Panjang</strong>
+                          <p>2x <b class="text-warning">Rp.500.000</b></p>
+                          <p class="text-muted">Catatan Pembeli:<br> "Yang satu warna biru yang satunya lagi warna merah"</p>
+                          <div class="pengiriman mt-3 mb-3 d-flex">
+                            <img src="https://i.pinimg.com/originals/df/61/10/df6110ff540409ab0174849e6f863de3.png" alt="" width="120px" height="50px">
+                            <div>
+                              <strong>JNT EXPRESS</strong>
+                              <p>Reguler: 2-4 Hari</p>
+                            </div>
+                          </div>
+                          <button class="btn btn-success">
+                            <i class="fa fa-check" aria-hidden="true"></i> Terima Pesanan
+                          </button>
+                          <button class="btn btn-danger">
+                            <i class="fa fa-times" aria-hidden="true"></i> Tolak
+                          </button>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-12">
+                          <img src="https://kastara.id/wp-content/uploads/2019/09/BNI-logo.jpg" alt="" width="180px" height="50px">
+                          <div class="chocolat-parent mt-3">
+                            <a href="https://gotra.sgp1.cdn.digitaloceanspaces.com/web-upload/1540447745_25-10-2018_14.jpg" class="chocolat-image" title="Bukti Transfer">
+                              <div data-crop-image="285">
+                                <img alt="image" src="https://gotra.sgp1.cdn.digitaloceanspaces.com/web-upload/1540447745_25-10-2018_14.jpg" class="img-fluid rounded">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pesanan-baru mt-4">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-12">
+                          <img src="https://cf.shopee.co.id/file/5ebdb5b539541cb4137803bcc43d8d48" alt="" class="rounded" width="100px" height="100px">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-12">
+                          <strong>Hem Batik Pria Lengan Panjang</strong>
+                          <p>2x <b class="text-warning">Rp.500.000</b></p>
+                          <p class="text-muted">Catatan Pembeli:<br> "Yang satu warna biru yang satunya lagi warna merah"</p>
+                          <div class="pengiriman mt-3 mb-3 d-flex">
+                            <img src="https://i.pinimg.com/originals/df/61/10/df6110ff540409ab0174849e6f863de3.png" alt="" width="120px" height="50px">
+                            <div>
+                              <strong>JNT EXPRESS</strong>
+                              <p>Reguler: 2-4 Hari</p>
+                            </div>
+                          </div>
+                          <div class="status d-flex">
+                            <b class="mr-3">Status:</b>
+                            <small class="badge badge-sm badge-warning">Proses Pengiriman</small>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-12">
+                          <img src="https://kastara.id/wp-content/uploads/2019/09/BNI-logo.jpg" alt="" width="180px" height="50px">
+                          <div class="chocolat-parent mt-3">
+                            <a href="https://gotra.sgp1.cdn.digitaloceanspaces.com/web-upload/1540447745_25-10-2018_14.jpg" class="chocolat-image" title="Bukti Transfer">
+                              <div data-crop-image="285">
+                                <img alt="image" src="https://gotra.sgp1.cdn.digitaloceanspaces.com/web-upload/1540447745_25-10-2018_14.jpg" class="img-fluid rounded">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pesanan-baru mt-4">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-12">
+                          <img src="https://cf.shopee.co.id/file/5ebdb5b539541cb4137803bcc43d8d48" alt="" class="rounded" width="100px" height="100px">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-12">
+                          <strong>Hem Batik Pria Lengan Panjang</strong>
+                          <p>2x <b class="text-warning">Rp.500.000</b></p>
+                          <p class="text-muted">Catatan Pembeli:<br> "Yang satu warna biru yang satunya lagi warna merah"</p>
+                          <div class="pengiriman mt-3 mb-3 d-flex">
+                            <img src="https://i.pinimg.com/originals/df/61/10/df6110ff540409ab0174849e6f863de3.png" alt="" width="120px" height="50px">
+                            <div>
+                              <strong>JNT EXPRESS</strong>
+                              <p>Reguler: 2-4 Hari</p>
+                            </div>
+                          </div>
+                          <div class="status d-flex">
+                            <b class="mr-3">Status:</b>
+                            <small class="badge badge-sm badge-success">Selesai Terkirim</small>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-12">
+                          <img src="https://kastara.id/wp-content/uploads/2019/09/BNI-logo.jpg" alt="" width="180px" height="50px">
+                          <div class="chocolat-parent mt-3">
+                            <a href="https://gotra.sgp1.cdn.digitaloceanspaces.com/web-upload/1540447745_25-10-2018_14.jpg" class="chocolat-image" title="Bukti Transfer">
+                              <div data-crop-image="285">
+                                <img alt="image" src="https://gotra.sgp1.cdn.digitaloceanspaces.com/web-upload/1540447745_25-10-2018_14.jpg" class="img-fluid rounded">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pesanan-baru mt-4">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-12">
+                          <img src="https://cf.shopee.co.id/file/5ebdb5b539541cb4137803bcc43d8d48" alt="" class="rounded" width="100px" height="100px">
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-12">
+                          <strong>Hem Batik Pria Lengan Panjang</strong>
+                          <p>2x <b class="text-warning">Rp.500.000</b></p>
+                          <p class="text-muted">Catatan Pembeli:<br> "Yang satu warna biru yang satunya lagi warna merah"</p>
+                          <div class="pengiriman mt-3 mb-3 d-flex">
+                            <img src="https://i.pinimg.com/originals/df/61/10/df6110ff540409ab0174849e6f863de3.png" alt="" width="120px" height="50px">
+                            <div>
+                              <strong>JNT EXPRESS</strong>
+                              <p>Reguler: 2-4 Hari</p>
+                            </div>
+                          </div>
+                          <div class="status d-flex">
+                            <b class="mr-3">Status:</b>
+                            <small class="badge badge-sm badge-danger">Dibatalkan</small>
+                          </div>
+                          <p class="mt-3">Alasan Pembatalan: <br>Kesalahan pemilihan model dan warna</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END SEMUA PESANAN -->
+
+                  <!-- PESANAN BARU -->
+                  <div class="tab-pane fade show active p-5" id="profile2" role="tabpanel" aria-labelledby="profile-tab2">
+                    <div class="pesanan-baru">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-12">
+                          <img src="https://cf.shopee.co.id/file/b9bacc507621f96b297edc35802d6384" alt="" class="rounded" width="100px" height="100px">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-12">
+                          <strong>Atasan Batik Wanita-Hitam Merah</strong>
+                          <p>1x <b class="text-warning">Rp.150.000</b></p>
+                          <p class="text-muted">Catatan Pembeli:<br> "Prioritaskan yang ukuran XL dulu ya kak, kalo misal gaada ukuran L juga gapapa"</p>
+                          <div class="pengiriman mt-3 mb-3 d-flex">
+                            <img src="https://www.wearemania.net/ngalam/wp-content/uploads/2020/12/20201217_Daftar-Alamat-Kantor-JNE-Express-di-Malang-Raya.png" alt="" width="120px" height="50px">
+                            <div>
+                              <strong>JNE EXPRESS</strong>
+                              <p>Reguler: 2-4 Hari</p>
+                            </div>
+                          </div>
+                          <button class="btn btn-success">
+                            <i class="fa fa-check" aria-hidden="true"></i> Terima Pesanan
+                          </button>
+                          <button class="btn btn-danger">
+                            <i class="fa fa-times" aria-hidden="true"></i> Tolak
+                          </button>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-12">
+                          <img src="https://mmc.tirto.id/image/2016/05/11/LogoBRI_050_ratio-16x9.JPG" alt="" width="180px" height="50px">
+                          <div class="chocolat-parent mt-3">
+                            <a href="https://i1.wp.com/masmedia.xyz/wp-content/uploads/2020/12/Contoh-Bukti-Transfer-BRI-Asli-atau-Palsu.jpg" class="chocolat-image" title="Bukti Transfer">
+                              <div data-crop-image="285">
+                                <img alt="image" src="https://i1.wp.com/masmedia.xyz/wp-content/uploads/2020/12/Contoh-Bukti-Transfer-BRI-Asli-atau-Palsu.jpg" class="img-fluid rounded">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pesanan-baru mt-4">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-12">
+                          <img src="https://cf.shopee.co.id/file/5ebdb5b539541cb4137803bcc43d8d48" alt="" class="rounded" width="100px" height="100px">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-12">
+                          <strong>Hem Batik Pria Lengan Panjang</strong>
+                          <p>2x <b class="text-warning">Rp.500.000</b></p>
+                          <p class="text-muted">Catatan Pembeli:<br> "Yang satu warna biru yang satunya lagi warna merah"</p>
+                          <div class="pengiriman mt-3 mb-3 d-flex">
+                            <img src="https://i.pinimg.com/originals/df/61/10/df6110ff540409ab0174849e6f863de3.png" alt="" width="120px" height="50px">
+                            <div>
+                              <strong>JNT EXPRESS</strong>
+                              <p>Reguler: 2-4 Hari</p>
+                            </div>
+                          </div>
+                          <button class="btn btn-success">
+                            <i class="fa fa-check" aria-hidden="true"></i> Terima Pesanan
+                          </button>
+                          <button class="btn btn-danger">
+                            <i class="fa fa-times" aria-hidden="true"></i> Tolak
+                          </button>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-12">
+                          <img src="https://kastara.id/wp-content/uploads/2019/09/BNI-logo.jpg" alt="" width="180px" height="50px">
+                          <div class="chocolat-parent mt-3">
+                            <a href="https://gotra.sgp1.cdn.digitaloceanspaces.com/web-upload/1540447745_25-10-2018_14.jpg" class="chocolat-image" title="Bukti Transfer">
+                              <div data-crop-image="285">
+                                <img alt="image" src="https://gotra.sgp1.cdn.digitaloceanspaces.com/web-upload/1540447745_25-10-2018_14.jpg" class="img-fluid rounded">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END PESANAN BARU -->
+
+                  <!-- PROSES PENGIRIMAN -->
+                  <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact-tab2">
+                    <div class="pesanan-baru mt-4">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-12">
+                          <img src="https://cf.shopee.co.id/file/5ebdb5b539541cb4137803bcc43d8d48" alt="" class="rounded" width="100px" height="100px">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-12">
+                          <strong>Hem Batik Pria Lengan Panjang</strong>
+                          <p>2x <b class="text-warning">Rp.500.000</b></p>
+                          <p class="text-muted">Catatan Pembeli:<br> "Yang satu warna biru yang satunya lagi warna merah"</p>
+                          <div class="pengiriman mt-3 mb-3 d-flex">
+                            <img src="https://i.pinimg.com/originals/df/61/10/df6110ff540409ab0174849e6f863de3.png" alt="" width="120px" height="50px">
+                            <div>
+                              <strong>JNT EXPRESS</strong>
+                              <p>Reguler: 2-4 Hari</p>
+                            </div>
+                          </div>
+                          <div class="status d-flex">
+                            <b class="mr-3">Status:</b>
+                            <small class="badge badge-sm badge-warning">Proses Pengiriman</small>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-12">
+                          <img src="https://kastara.id/wp-content/uploads/2019/09/BNI-logo.jpg" alt="" width="180px" height="50px">
+                          <div class="chocolat-parent mt-3">
+                            <a href="https://gotra.sgp1.cdn.digitaloceanspaces.com/web-upload/1540447745_25-10-2018_14.jpg" class="chocolat-image" title="Bukti Transfer">
+                              <div data-crop-image="285">
+                                <img alt="image" src="https://gotra.sgp1.cdn.digitaloceanspaces.com/web-upload/1540447745_25-10-2018_14.jpg" class="img-fluid rounded">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END PROSES PENGIRIMAN -->
+
+                  <!-- PESANAN SELESAI -->
+                  <div class="tab-pane fade" id="selesai2" role="tabpanel" aria-labelledby="selesai-tab2">
+                    <div class="pesanan-baru mt-4">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-12">
+                          <img src="https://cf.shopee.co.id/file/5ebdb5b539541cb4137803bcc43d8d48" alt="" class="rounded" width="100px" height="100px">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-12">
+                          <strong>Hem Batik Pria Lengan Panjang</strong>
+                          <p>2x <b class="text-warning">Rp.500.000</b></p>
+                          <p class="text-muted">Catatan Pembeli:<br> "Yang satu warna biru yang satunya lagi warna merah"</p>
+                          <div class="pengiriman mt-3 mb-3 d-flex">
+                            <img src="https://i.pinimg.com/originals/df/61/10/df6110ff540409ab0174849e6f863de3.png" alt="" width="120px" height="50px">
+                            <div>
+                              <strong>JNT EXPRESS</strong>
+                              <p>Reguler: 2-4 Hari</p>
+                            </div>
+                          </div>
+                          <div class="status d-flex">
+                            <b class="mr-3">Status:</b>
+                            <small class="badge badge-sm badge-success">Selesai Terkirim</small>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-12">
+                          <img src="https://kastara.id/wp-content/uploads/2019/09/BNI-logo.jpg" alt="" width="180px" height="50px">
+                          <div class="chocolat-parent mt-3">
+                            <a href="https://gotra.sgp1.cdn.digitaloceanspaces.com/web-upload/1540447745_25-10-2018_14.jpg" class="chocolat-image" title="Bukti Transfer">
+                              <div data-crop-image="285">
+                                <img alt="image" src="https://gotra.sgp1.cdn.digitaloceanspaces.com/web-upload/1540447745_25-10-2018_14.jpg" class="img-fluid rounded">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END PESANAN SELESAI -->
+
+                  <!-- DIBATALKAN -->
+                  <div class="tab-pane fade" id="batal2" role="tabpanel" aria-labelledby="batal-tab2">
+                    <div class="pesanan-baru mt-4">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-12">
+                          <img src="https://cf.shopee.co.id/file/5ebdb5b539541cb4137803bcc43d8d48" alt="" class="rounded" width="100px" height="100px">
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-12">
+                          <strong>Hem Batik Pria Lengan Panjang</strong>
+                          <p>2x <b class="text-warning">Rp.500.000</b></p>
+                          <p class="text-muted">Catatan Pembeli:<br> "Yang satu warna biru yang satunya lagi warna merah"</p>
+                          <div class="pengiriman mt-3 mb-3 d-flex">
+                            <img src="https://i.pinimg.com/originals/df/61/10/df6110ff540409ab0174849e6f863de3.png" alt="" width="120px" height="50px">
+                            <div>
+                              <strong>JNT EXPRESS</strong>
+                              <p>Reguler: 2-4 Hari</p>
+                            </div>
+                          </div>
+                          <div class="status d-flex">
+                            <b class="mr-3">Status:</b>
+                            <small class="badge badge-sm badge-danger">Dibatalkan</small>
+                          </div>
+                          <p class="mt-3">Alasan Pembatalan: <br>Kesalahan pemilihan model dan warna</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END DIBATALKAN -->
+                </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- AKHIR KONTEN UTAMA -->
+
+      <!-- FOOTER -->
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2021 <div class="bullet"></div> Created By &hearts; <a
+            href="https://www.instagram.com/iam.r7/">Reza Febriansyah</a> To Guwosari
+        </div>
+        <div class="footer-right">
+
+        </div>
+      </footer>
+      <!-- AKHIR FOOTER -->
+      
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT UTAMA -->
+  <script src="assets/modules/jquery.min.js"></script>
+  <script src="assets/modules/popper.js"></script>
+  <script src="assets/modules/tooltip.js"></script>
+  <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="assets/modules/moment.min.js"></script>
+  <script src="assets/js/script-utilities.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <!-- JAVASCRIPT KEBUTUHAN HALAMAN -->
+  <script src="assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+
+</body>
+</html>
