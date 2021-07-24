@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Edit Produk-Erisa Batik</title>
+  <title>Edit Produk-Dashboard UMKM | BELANJA GUWOSARI</title>
 
   <!-- CSS BOOTSTRAP -->
   <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
@@ -47,7 +47,7 @@
 
           <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle beep"><i class="bx bx-chat"></i></a>
             <div class="dropdown-menu dropdown-list dropdown-menu-right">
-              <div class="dropdown-header">Pesan Masuk (2)</div>
+              <div class="dropdown-header">Pesan Masuk (1)</div>
               <div class="dropdown-list-content dropdown-list-message">
                 <a href="#" class="dropdown-item dropdown-item-unread">
                   <div class="dropdown-item-avatar">
@@ -56,18 +56,8 @@
                   </div>
                   <div class="dropdown-item-desc">
                     <b>Randi Nugraha</b>
-                    <p>Halo Kak, kemeja batik yang ini ready gk ya?</p>
+                    <p>Halo Kak, Ingkung Gorengnya ready gak ya?</p>
                     <div class="time">2 Jam Yang Lalu</div>
-                  </div>
-                </a>
-                <a href="#" class="dropdown-item dropdown-item-unread">
-                  <div class="dropdown-item-avatar">
-                    <img alt="image" src="https://media-exp1.licdn.com/dms/image/C5103AQGsMFce4zMF-w/profile-displayphoto-shrink_200_200/0/1517348277979?e=1626912000&v=beta&t=vb1gX9xMrDKOTKBp4-DTbB9PXGMLZCycfdENXVZX8Qk" class="rounded-circle">
-                  </div>
-                  <div class="dropdown-item-desc">
-                    <b>Henny Trisnadewi</b>
-                    <p>Ndakpapa mas biru atau hijau juga bole</p>
-                    <div class="time">1 Hari Yang Lalu</div>
                   </div>
                 </a>
               </div>
@@ -98,8 +88,8 @@
             </div>
           </li>
           <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-            <img alt="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbXQr_WMRVbfOokFa-HWqdrQGb5pDUkyoG9A&usqp=CAU" class="rounded-circle mr-1">
-            <div class="d-sm-none d-lg-inline-block">Halo, Erisa Batik</div></a>
+            <img alt="image" src="assets/img/warung-ndeso.png" class="rounded-circle mr-1">
+            <div class="d-sm-none d-lg-inline-block">Halo, Waroeng nDesso</div></a>
             <div class="dropdown-menu dropdown-menu-right">
               <div class="dropdown-title">Sedang Aktif</div>
               <a href="info-umkm.html" class="dropdown-item has-icon">
@@ -119,7 +109,7 @@
       <div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <a href="#">Ingkung Guwosari</a>
+            <a href="#">Belanja Guwosari</a>
           </div>
           <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
             <a href="index-1.html" class="btn btn-success btn-lg btn-block btn-icon-split">
@@ -127,15 +117,15 @@
             </a>
           </div>
           <div class="sidebar-brand sidebar-brand-sm">
-            <a href="#">IG</a>
+            <a href="#">BG</a>
           </div>
           <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
             <li>
-              <a href="#" class="nav-link"><i class="fas fa-store"></i><span>Dashboard UMKM</span></a>
+              <a href="dashboard-penjual.html" class="nav-link"><i class="fas fa-store"></i><span>Dashboard UMKM</span></a>
             </li>
             <li class="menu-header">Menu Pintasan</li>
-            <li class="dropdown">
+            <li class="dropdown active">
               <a href="#" class="nav-link has-dropdown">
                 <i class="fas fa-tasks"></i> <span>Kelola Produk</span>
               </a>
@@ -143,8 +133,11 @@
                 <li><a href="kelola-produk.html">Daftar Produk</a></li>
               </ul>
               <ul class="dropdown-menu">
-                <li><a href="tambah-produk.html">Tambah Produk</a></li>
+                <li><a href="tambah-produk.html" class="text-success">Tambah Produk</a></li>
               </ul>
+            </li>
+            <li>
+              <a href="saldo-rekening.html" class="nav-link"><i class="fas fa-credit-card"></i><span>Info Rekening <div class="bullet text-warning"></div></span></a>
             </li>
             <li>
               <a href="penjualan.html" class="nav-link"><i class="fas fa-clipboard-list"></i><span>Penjualan <div class="bullet text-warning"></div></span></a>
@@ -225,7 +218,7 @@
                   </div>
                   <div class="col-lg-8 col-md-8 col-12">
                     <div class="form-group">
-                      <input type="text" class="form-control" value="Blouse Batik Wanita Ukuran Besar">
+                      <input type="text" class="form-control" value="Waroeng nDesso-Ayam Ingkung Bakar">
                       <small id="helpId" class="form-text text-muted">0/70</small>
                     </div>
                   </div>
@@ -237,10 +230,10 @@
                   <div class="col-lg-8 col-md-8 col-12">
                     <div class="form-group">
                       <select class="form-control select2">
-                        <option>Makanan</option>
+                        <option selected>Makanan</option>
                         <option>Minuman</option>
                         <option>Pakaian Pria</option>
-                        <option selected>Pakaian Wanita</option>
+                        <option>Pakaian Wanita</option>
                       </select>
                     </div>
                   </div>
@@ -268,22 +261,7 @@
                   </div>
                   <div class="col-lg-8 col-md-8 col-12">
                     <div class="form-group">
-                      <textarea class="form-control" name="" id="" rows="3">Barang ready bukan pre-order. Langsung klik beli dan pasti kami kirim di hari yang sama, 1 minggu 7 hari kerja, no libur-libur club kirim terus.
-
-                        Deskripsi produk
-
-                        Tersedia size M L XL
-
-                        Lingkar dada
-                        M: 98cm-100cm
-                        L: 102cm-104cm
-                        XL: 104cm-106
-
-                        Bahan katun batik tetap adem dipakai saat anda berkeringat.
-
-                        Menerima pesanan batik partai besar harga grosir.
-                        Sedia aneka Fashion Batik
-                      </textarea>
+                      <textarea class="form-control" name="" id="" rows="3">Ayam Ingkung merupakan kuliner khas Jawa yang berbahan dasar ayam yang dimasak secara utuh dengan berbagai jenis bumbu rempah. Ingkung berasal dari kata“manengkung” yang berarti berdoa kepada Tuhan dengan kesungguhan hati. Hidangan ini menjadi kultur dan wajib di setiap acara besar adat Jawa. Cita rasa ayam goreng yang tidak pedas dengan bumbu yang meresap sangat cocok khususnya yang memiliki anak-anak dirumah.</textarea>
                     </div>
                   </div>
                 </div>
@@ -293,7 +271,13 @@
                   </div>
                   <div class="col-lg-8 col-md-8 col-12">
                     <div class="form-group">
-                      <textarea class="form-control" name="" id="" rows="3"></textarea>
+                      <textarea class="form-control" name="" id="" rows="3">Kondisi: Baru
+                        Berat: 1.500 Gram
+                        Kategori: Makanan
+                        
+                        Ayam goreng
+                        1 ekor +/- 1.5 kg
+                        Ayam merah, texture seperti ayam kampung Enak dan murah Sdh termasuk lalapan dan sambal</textarea>
                     </div>
                   </div>
                 </div>
@@ -303,7 +287,10 @@
                   </div>
                   <div class="col-lg-8 col-md-8 col-12">
                     <div class="form-group">
-                      <textarea class="form-control" name="" id="" rows="3"></textarea>
+                      <textarea class="form-control" name="" id="" rows="3">CARA PENYAJIAN:
+                        - Sebaiknya dikonsumsi langsung saat paket makanan tiba.
+                        - Disimpan pada chiller, tahan 1- 2 hari.
+                        - Bisa hangatkan kembali menggunakan microwave selama 1-2 menit atau air fry selama 5-10 menit.</textarea>
                     </div>
                   </div>
                 </div>
@@ -336,7 +323,7 @@
                           <strong>Rp</strong>
                         </div>
                       </div>
-                      <input type="number" class="form-control currency" value="90.000">
+                      <input type="number" class="form-control currency" value="150.000">
                     </div>
                   </div>
                 </div>
@@ -351,7 +338,7 @@
                           <strong>%</strong>
                         </div>
                       </div>
-                      <input type="number" class="form-control" value="5">
+                      <input type="number" class="form-control" value="10">
                     </div>
                   </div>
                 </div>
