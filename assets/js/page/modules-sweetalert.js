@@ -81,7 +81,7 @@ $("#swal-edit-info-umkm").click(function() {
   }, 1500);
 });
 
-$("#swal-ubah-password").click(function() {
+$("#swal-edit-password").click(function() {
 	swal('Berhasil !', 'Kata Sandi anda berhasil diubah', 'success');
   setTimeout(function(){ 
     window.location.href = "profil-akun.html";
