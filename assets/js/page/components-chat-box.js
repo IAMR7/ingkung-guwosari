@@ -49,7 +49,7 @@ $("#chat-form").submit(function() {
 // CHAT PENJUAL
 var chats = [
   {
-    text: 'Halo Kak, kemeja batik yang ini ready gk ya ?',
+    text: 'Halo Kak, Ingkung Gorengnya ready gak ya?',
     position: 'left'
   },
 ];
@@ -69,7 +69,7 @@ $("#chat-form2").submit(function() {
   if(me.find('input').val().trim().length > 0) {      
     $.chatCtrl('#mychatbox2', {
       text: me.find('input').val(),
-      picture: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbXQr_WMRVbfOokFa-HWqdrQGb5pDUkyoG9A&usqp=CAU',
+      picture: 'assets/img/warung-ndeso.png',
     });
     me.find('input').val('');
   } 
