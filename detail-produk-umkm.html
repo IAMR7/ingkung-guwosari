@@ -15,11 +15,6 @@
   <!-- CSS BOXICONS -->
   <link rel="stylesheet" href="assets/modules/boxicons-2.0.7/css/boxicons.css">
 
-  <!-- CSS DATATABLES -->
-  <link rel="stylesheet" href="assets/modules/datatables/datatables.min.css">
-  <link rel="stylesheet" href="assets/modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
-  <link rel="stylesheet" href="assets/modules/datatables/Select-1.2.4/css/select.bootstrap4.min.css">
-
   <!-- CSS CUSTOM HALAMAN -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -159,97 +154,193 @@
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h5>Kelola Produk</h5>
+            <h5>Detail Produk UMKM</h5>
             <div class="section-header-breadcrumb">
-              <div class="breadcrumb-item"><a href="#">Dashboard UMKM</a></div>
-              <div class="breadcrumb-item">Daftar Produk</div>
+              <div class="breadcrumb-item"><a href="dashboard-penjual.html">Dashboard UMKM</a></div>
+              <div class="breadcrumb-item"><a href="kelola-produk.html">Daftar Produk</a></div>
+              <div class="breadcrumb-item">Detail Produk UMKM</div>
             </div>
           </div>
 
           <div class="section-body">
-
-            <div class="row">
-              <div class="col-12">
-                <div class="card">
-                  <div class="card-header d-flex justify-content-between">
-                    <h4>Daftar Produk</h4>
-                    <a href="tambah-produk.html" class="btn btn-lg btn-success">
-                      <i class="fa fa-plus" aria-hidden="true"></i> Tambah Produk
-                    </a>
+            <div class="card p-4">
+              <div class="card-body">
+                <h5>Foto Produk</h5>
+                <div class="row mt-4">
+                  <div class="col-lg-2 col-md-2 col-6">
+                    <p>Foto Utama</p>
+                    <img src="https://cf.shopee.co.id/file/2a4482c8bfb4dd170ea5b33e86c08854" alt="" class="image-fluid rounded" width="100%">
                   </div>
-                  <div class="card-body">
-                    <div class="table-responsive">
-                      <table class="table table-hovered table-striped" id="table-2">
-                        <thead>
-                          <tr>
-                            <th class="text-center">
-                              <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" data-checkbox-role="dad"
-                                  class="custom-control-input" id="checkbox-all">
-                                <label for="checkbox-all" class="custom-control-label">&nbsp;</label>
-                              </div>
-                            </th>
-                            <th>Info Produk</th>
-                            <th>Kategori</th>
-                            <th>Harga</th>
-                            <th>Stok</th>
-                            <th>Aktif</th>
-                            <th>Aksi</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                                  id="checkbox-1">
-                                <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                              </div>
-                            </td>
-                            <td class="d-flex">
-                              <img src="https://cf.shopee.co.id/file/2a4482c8bfb4dd170ea5b33e86c08854" alt=""
-                                class="rounded mr-3" width="70px" height="70px">
-                              <div>
-                                <strong>Waroeng nDesso-Ayam Ingkung Bakar</strong>
-                                <p class="text-muted">Tersedia dengan paket nasi</p>
-                              </div>
-                            </td>
-                            <td>
-                              Makanan
-                            </td>
-                            <td>
-                              Rp.150.000
-                            </td>
-                            <td>15</td>
-                            <td>
-                              <div class="form-group">
-                                <label class="custom-switch mt-2">
-                                  <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked>
-                                  <span class="custom-switch-indicator"></span>
-                                </label>
-                              </div>
-                            </td>
-                            <td>
-                              <div class="btn-group">
-                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
-                                  aria-haspopup="true" aria-expanded="false">
-                                  Pilihan
-                                </button>
-                                <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="detail-produk-umkm.html">Detail Produk</a>
-                                  <a class="dropdown-item" href="edit-produk.html">Edit Produk</a>
-                                  <a class="dropdown-item text-danger" href="#">Hapus Produk</a>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                  <div class="col-lg-2 col-md-2 col-6">
+                    <p>Foto Tambahan</p>
+                    <img src="https://cf.shopee.co.id/file/2a4482c8bfb4dd170ea5b33e86c08854" alt="" class="image-fluid rounded" width="100%">
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-6">
+                    <p>Foto Tambahan</p>
+                    <img src="https://cf.shopee.co.id/file/2a4482c8bfb4dd170ea5b33e86c08854" alt="" class="image-fluid rounded" width="100%">
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-6">
+                    <p>Foto Tambahan</p>
+                    <img src="https://cf.shopee.co.id/file/2a4482c8bfb4dd170ea5b33e86c08854" alt="" class="image-fluid rounded" width="100%">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-4">
+              <div class="card-body">
+                <h5>Identitas Produk</h5>
+                <div class="row mt-4">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Nama Produk</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <p>Waroeng nDesso-Ayam Ingkung Bakar</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Kategori</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <p>Makanan</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Kondisi</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <p>Baru</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Deskripsi</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <p class="text-justify">
+                      Ayam Ingkung merupakan kuliner khas Jawa yang berbahan dasar ayam yang dimasak secara utuh dengan berbagai jenis bumbu rempah. Ingkung berasal dari kata“manengkung” yang berarti berdoa kepada Tuhan dengan kesungguhan hati. Hidangan ini menjadi kultur dan wajib di setiap acara besar adat Jawa. Cita rasa ayam goreng yang tidak pedas dengan bumbu yang meresap sangat cocok khususnya yang memiliki anak-anak dirumah.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Kelengkapan</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <p>
+                      Kondisi: Baru <br>
+                        Berat: 1.500 Gram <br>
+                        Kategori: Makanan <br><br>
+                        
+                        Ayam goreng <br>
+                        1 ekor +/- 1.5 kg <br>
+                        Ayam merah, texture seperti ayam kampung Enak dan murah Sdh termasuk lalapan dan sambal
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Catatan Produk</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <p>
+                      CARA PENYAJIAN: <br>
+                        - Sebaiknya dikonsumsi langsung saat paket makanan tiba. <br>
+                        - Disimpan pada chiller, tahan 1- 2 hari. <br>
+                        - Bisa hangatkan kembali menggunakan microwave selama 1-2 menit atau air fry selama 5-10 menit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-4">
+              <div class="card-body">
+                <h5>Harga dan Potongan</h5>
+                <div class="row mt-4">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Minimal Pemesanan</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <p>
+                      1
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Harga Satuan</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <p>
+                      Rp. 150.000
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Potongan Diskon</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <p>
+                      10%
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-4">
+              <div class="card-body">
+                <h5>Pengelolaan Produk</h5>
+                <div class="row mt-4">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Status Produk</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <p>
+                      Aktif
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Stok tersedia</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <p>
+                      20
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Pengiriman</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-6">
+                        <img src="https://vectrostudio.com/wp-content/uploads/2020/01/JNE-Logo_vectrostudio.jpg" alt="" class="image-fluid rounded" width="100%">
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-6">
+                        <img src="https://assets-a1.kompasiana.com/items/album/2019/12/22/untitled-5dfe503b097f36297805be43.png" alt="" class="image-fluid rounded" width="100%">
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-6">
+                        <img src="https://www.grab.com/id/wp-content/uploads/sites/7/2016/07/Slide-18-GE.jpg" alt="" class="image-fluid rounded" width="100%">
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <a href="kelola-produk.html" class="btn btn-success">
+              <i class="fa fa-arrow-left" aria-hidden="true"></i> Kembali
+            </a>
+            <a href="edit-produk.html" class="btn btn-warning">
+              <i class="fa fa-edit" aria-hidden="true"></i> Edit Produk
+            </a>
+            <a href="#" class="btn btn-danger">
+              <i class="fa fa-trash-alt" aria-hidden="true"></i> Hapus Produk
+            </a>
           </div>
         </section>
       </div>
@@ -281,11 +372,6 @@
   <script src="assets/js/custom.js"></script>
 
   <!-- JAVASCRIPT KEBUTUHAN HALAMAN -->
-  <script src="assets/modules/datatables/datatables.min.js"></script>
-  <script src="assets/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
-  <script src="assets/modules/datatables/Select-1.2.4/js/dataTables.select.min.js"></script>
-  <script src="assets/modules/jquery-ui/jquery-ui.min.js"></script>
-  <script src="assets/js/page/modules-datatables.js"></script>
 
 </body>
 
