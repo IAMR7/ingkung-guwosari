@@ -434,6 +434,26 @@ a.card-konten-edukasi p, a.card-konten-edukasi h6, div.card-body h5.mt-3 {
     color: #6c757d;
 }
 
+/* LOGIN ADMIN */
+
+.login-admin div.row{
+    background-color: white;
+    width: 80%;
+    margin-top: 60px;
+}
+
+div.bg-login-admin {
+    background: url("https://cdn-2.tstatic.net/jogja/foto/bank/images/lurah-guwosari-pajangan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+a.btn-login-admin {
+    width: 100%;
+}
+
 @media (min-width: 992px) {
 
     div.main-content {
@@ -553,6 +573,14 @@ a.card-konten-edukasi p, a.card-konten-edukasi h6, div.card-body h5.mt-3 {
 
     div.rekomendasi-wisata img {
         width: 300px;
+    }
+
+    .login-admin div.row{
+        width: 50%;
+    }
+
+    div.bg-login-admin {
+        height: 100%;
     }
 
 }
