@@ -435,7 +435,6 @@ a.card-konten-edukasi p, a.card-konten-edukasi h6, div.card-body h5.mt-3 {
 }
 
 /* LOGIN ADMIN */
-
 .login-admin div.row{
     background-color: white;
     width: 80%;
@@ -452,6 +451,13 @@ div.bg-login-admin {
 
 a.btn-login-admin {
     width: 100%;
+}
+
+/* DASHBOARD ADMIN */
+div.icon-untung {
+    background-color: #38c59f6b;
+    width: 50px;
+    height: 50px;
 }
 
 @media (min-width: 992px) {
