@@ -128,11 +128,24 @@
           <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
             <li class="active">
-              <a href="admin-dashboard.html" class="nav-link"><i class="fas fa-home"></i><span>Dashboard
-                  Admin</span></a>
+              <a href="admin-dashboard.html" class="nav-link">
+                <i class="fa fa-home"></i>
+                <span>Dashboard Admin</span>
+              </a>
             </li>
             <li class="menu-header">Menu Admin</li>
-
+            <li>
+              <a href="admin-data-pengguna.html" class="nav-link">
+                <i class="fa fa-users"></i>
+                <span>Data Pengguna</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-manage-artikel" class="nav-link">
+                <i class="far fa-newspaper"></i>
+                <span>Manajemen Artikel</span>
+              </a>
+            </li>
           </ul>
         </aside>
       </div>
@@ -202,7 +215,7 @@
             <div class="col-lg-6 col-md-6 col-12">
               <div class="card">
                 <div class="card-body">
-                  <h6>Data Keuntungan</h6>
+                  <h6>Total Keuntungan : <b class="text-warning">Rp.72.522.000</b></h6>
                   <hr>
                   <div class="row">
                     <div class="col-6 mb-3">
@@ -316,72 +329,35 @@
                             </button>
                           </td>
                         </tr>
-                        <tr>
-                          <td>
-                            Belajar sambil bermain di ...
-                            <div class="table-links">
-                              Kategori <a href="#" class="text-success">Wisata</a>
-                            </div>
-                          </td>
-                          <td>
-                            <a href="#" class="font-weight-600 text-success">
-                              <img src="assets/img/avatar/admin.png" alt="avatar" width="30" class="rounded-circle mr-1"> Admin
-                            </a>
-                          </td>
-                          <td>
-                            <a href="admin-edit-artikel.html" class="btn btn-success">
-                              <i class="fas fa-edit"></i>
-                            </a>
-                            <button class="btn btn-danger" id="swal-hapus-artikel">
-                              <i class="fas fa-trash-alt"></i>
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Belajar sambil bermain di ...
-                            <div class="table-links">
-                              Kategori <a href="#" class="text-success">Wisata</a>
-                            </div>
-                          </td>
-                          <td>
-                            <a href="#" class="font-weight-600 text-success">
-                              <img src="assets/img/avatar/admin.png" alt="avatar" width="30" class="rounded-circle mr-1"> Admin
-                            </a>
-                          </td>
-                          <td>
-                            <a href="admin-edit-artikel.html" class="btn btn-success">
-                              <i class="fas fa-edit"></i>
-                            </a>
-                            <button class="btn btn-danger" id="swal-hapus-artikel">
-                              <i class="fas fa-trash-alt"></i>
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Belajar sambil bermain di ...
-                            <div class="table-links">
-                              Kategori <a href="#" class="text-success">Wisata</a>
-                            </div>
-                          </td>
-                          <td>
-                            <a href="#" class="font-weight-600 text-success">
-                              <img src="assets/img/avatar/admin.png" alt="avatar" width="30" class="rounded-circle mr-1"> Admin
-                            </a>
-                          </td>
-                          <td>
-                            <a href="admin-edit-artikel.html" class="btn btn-success">
-                              <i class="fas fa-edit"></i>
-                            </a>
-                            <button class="btn btn-danger" id="swal-hapus-artikel">
-                              <i class="fas fa-trash-alt"></i>
-                            </button>
-                          </td>
-                        </tr>
-                        
                       </tbody>
                     </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Top 3 UMKM : Agustus 2021</h4>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col text-center">
+                      <img src="assets/img/warung-ndeso.png" alt="" class="image-fluid rounded" width="50px">
+                      <div class="mt-2 font-weight-bold">Waroeng nD...</div>
+                      <div class="text-muted text-small"><span class="text-success"><i class="fas fa-caret-up"></i></span> 78%</div>
+                    </div>
+                    <div class="col text-center">
+                      <img src="assets/img/warung-ndeso.png" alt="" class="image-fluid rounded" width="50px">
+                      <div class="mt-2 font-weight-bold">Ingkung Kuali</div>
+                      <div class="text-muted text-small"><span class="text-success"><i class="fas fa-caret-up"></i></span> 48%</div>
+                    </div>
+                    <div class="col text-center">
+                      <img src="assets/img/warung-ndeso.png" alt="" class="image-fluid rounded" width="50px">
+                      <div class="mt-2 font-weight-bold">Ingkung Sor...</div>
+                      <div class="text-muted text-small"><span class="text-success"><i class="fas fa-caret-up"></i></span> 30%</div>
+                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -413,6 +389,7 @@
   <script src="assets/js/custom.js"></script>
 
   <!-- JAVASCRIPT KEBUTUHAN HALAMAN -->
+  <script src="assets/modules/owlcarousel2/dist/owl.carousel.min.js"></script>
   <script src="assets/modules/sweetalert/sweetalert.min.js"></script>
   <script src="assets/js/page/modules-sweetalert.js"></script>
   <script src="assets/modules/summernote/summernote-bs4.js"></script>
