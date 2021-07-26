@@ -139,6 +139,26 @@ $("#swal-daftar-umkm").click(function() {
     });
 });
 
+$("#swal-hapus-artikel").click(function() {
+  swal({
+      title: 'Yakin Hapus Artikel ?',
+      text: 'Setelah menekan "OK" Artikel Akan Dihapus',
+      icon: 'warning',
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+        if (willDelete) {
+          swal('Artikel Berhasil Dihapus', {
+            icon: 'success',
+          });
+        } else {
+          swal('Batal Hapus Artikel');
+        }
+      }
+    );
+});
+
 $("#swal-simpan-produk").click(function() {
   swal({
       title: 'Apakah Produk Sudah Benar ?',
