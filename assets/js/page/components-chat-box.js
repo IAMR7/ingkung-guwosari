@@ -118,6 +118,36 @@ $("#chat-form3").submit(function() {
   return false;
 });
 
+// CHAT ADMIN
+var chatsAdmin = [
+  {
+    text: 'Permisi Admin, saya memiliki kendala dengan UMKM saya',
+    position: 'left'
+  },
+];
+for(var i = 0; i < chatsAdmin.length; i++) {
+  var type = 'text';
+  if(chatsAdmin[i].typing != undefined) type = 'typing';
+  $.chatCtrl('#mychatbox5', {
+    text: (chatsAdmin[i].text != undefined ? chatsAdmin[i].text : ''),
+    picture: (chatsAdmin[i].position == 'left' ? 'https://pbs.twimg.com/profile_images/1186463332695326720/607r-6rY_400x400.jpg' : 'assets/img/avatar/admin.png'),
+    position: 'chat-'+chatsAdmin[i].position,
+    type: type
+  });
+}
+$("#chat-form5").submit(function() {
+  var me = $(this);
+
+  if(me.find('input').val().trim().length > 0) {      
+    $.chatCtrl('#mychatbox5', {
+      text: me.find('input').val(),
+      picture: 'assets/img/avatar/admin.png',
+    });
+    me.find('input').val('');
+  } 
+  return false;
+});
+
 // CHAT DETAIL PRODUK DAN TOKO
 var chatDetail = [
   {

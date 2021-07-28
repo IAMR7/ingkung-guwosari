@@ -189,94 +189,42 @@
             <h1>Pesan Admin</h1>
           </div>
           <div class="section-body">
-            <div class="card rounded">
-              <div class="card-body">
-                <div class="row justify-content-between">
-                  <div class="d-flex">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck">
-                      <label class="custom-control-label" for="customCheck">Pilih Pesan</label>
-                    </div>
-                    <button class="btn btn-sm btn-light ml-3">
-                      <i class="fa fa-sync-alt" aria-hidden="true"></i> Segarkan
-                    </button>
-                  </div>
-                  <a href="admin-tulis-pesan.html" class="badge badge-success">
-                    <i class="fa fa-plus" aria-hidden="true"></i> Tulis Pesan
-                  </a>
-                </div>
-              </div>
-            </div>
             <div class="row">
-              <div class="div col-lg-3 col-md-3 col-12">
-                <div class="card rounded">
+              <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Pengguna</h4>
+                  </div>
                   <div class="card-body">
-                    <div class="admin-pesan-active p-3 bg-light rounded">
-                      <i class="fa fa-inbox mr-2" aria-hidden="true"></i>
-                      <strong>Pesan Masuk (1)</strong>
-                    </div>
-                    <hr>
-                    <div class="admin-pesan-active p-3">
-                      <i class="fa fa-paper-plane mr-2" aria-hidden="true"></i>
-                      <strong>Pesan Terkirim</strong>
-                    </div>
+                    <ul class="list-unstyled list-unstyled-border">
+                      <li class="media">
+                        <img alt="image" class="mr-3 rounded-circle" width="50" src="https://pbs.twimg.com/profile_images/1186463332695326720/607r-6rY_400x400.jpg">
+                        <div class="media-body">
+                          <div class="mt-0 mb-1 font-weight-bold">Rahmat Andi</div>
+                          <div class="text-success text-small font-600-bold"><i class="fas fa-circle"></i> Online</div>
+                          <p>
+                            Permisi Admin, saya memiliki kendala dengan UMKM saya
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-9 col-md-9 col-12">
-                <div class="card rounded">
-                  <div class="card-body">
-                    <div class="row justify-content-around bg-light rounded">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">
-                          <i class="fa fa-caret-down text-muted" aria-hidden="true"></i>
-                        </label>
-                      </div>
-                      <strong class="text-dark">Junaedi</strong>
-                      <a href="admin-detail-pesan.html" class="text-dark">
-                        <strong>
-                          Assalamualaikum wr wb admin, mau bertanya terkait akun ini
-                        </strong>
-                      </a>
-                      <strong class="text-dark">15.30</strong>
-                    </div>
-                    <hr>
-                    <div class="row justify-content-around">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                        <label class="custom-control-label" for="customCheck2">
-                          <i class="fa fa-caret-down text-light" aria-hidden="true"></i>
-                        </label>
-                      </div>
-                      <p>Junaedi</p>
-                      <p>Assalamualaikum wr wb admin, mau bertanya terkait akun ini</p>
-                      <p>15.30</p>
-                    </div>
-                    <hr>
-                    <div class="row justify-content-around">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                        <label class="custom-control-label" for="customCheck2">
-                          <i class="fa fa-caret-down text-light" aria-hidden="true"></i>
-                        </label>
-                      </div>
-                      <p>Junaedi</p>
-                      <p>Assalamualaikum wr wb admin, mau bertanya terkait akun ini</p>
-                      <p>15.30</p>
-                    </div>
-                    <hr>
-                    <div class="row justify-content-around">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                        <label class="custom-control-label" for="customCheck2">
-                          <i class="fa fa-caret-down text-light" aria-hidden="true"></i>
-                        </label>
-                      </div>
-                      <p>Junaedi</p>
-                      <p>Assalamualaikum wr wb admin, mau bertanya terkait akun ini</p>
-                      <p>15.30</p>
-                    </div>
+              <div class="col-lg-8 col-md-8 col-12">
+                <div class="card chat-box card-success" id="mychatbox5">
+                  <div class="card-header">
+                    <h4><i class="fas fa-circle text-success mr-2" title="Online" data-toggle="tooltip"></i> Rahmat Andi</h4>
+                  </div>
+                  <div class="card-body chat-content">
+                  </div>
+                  <div class="card-footer chat-form">
+                    <form id="chat-form5">
+                      <input type="text" class="form-control" placeholder="Tulis Pesan ...">
+                      <button class="btn btn-success">
+                        <i class="far fa-paper-plane"></i>
+                      </button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -310,6 +258,7 @@
   <!-- JAVASCRIPT KEBUTUHAN HALAMAN -->
   <script src="assets/modules/sweetalert/sweetalert.min.js"></script>
   <script src="assets/js/page/modules-sweetalert.js"></script>
+  <script src="assets/js/page/components-chat-box.js"></script>
   
 </body>
 
