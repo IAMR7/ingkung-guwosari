@@ -4,13 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Admin Pesan-BELANJA GUWOSARI</title>
+  <title>Admin Balas Pesan-BELANJA GUWOSARI</title>
 
   <!-- CSS BOOTSTRAP -->
   <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.css">
 
   <!-- CSS FONT AWESOME -->
   <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS SUMMERNOTE -->
+  <link rel="stylesheet" href="assets/modules/summernote/summernote-bs4.css">
 
   <!-- CSS BOXICONS -->
   <link rel="stylesheet" href="assets/modules/boxicons-2.0.7/css/boxicons.css">
@@ -186,99 +189,35 @@
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h1>Pesan Admin</h1>
+            <h1>Balas Pesan</h1>
           </div>
           <div class="section-body">
             <div class="card rounded">
               <div class="card-body">
-                <div class="row justify-content-between">
-                  <div class="d-flex">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck">
-                      <label class="custom-control-label" for="customCheck">Pilih Pesan</label>
-                    </div>
-                    <button class="btn btn-sm btn-light ml-3">
-                      <i class="fa fa-sync-alt" aria-hidden="true"></i> Segarkan
+                <div class="form-group">
+                  <label>Kepada</label>
+                  <input type="text" class="form-control" value="Junaedi Kurniawan">
+                </div>
+                <hr>
+                <div class="form-group">
+                  <label>Subjek</label>
+                  <input type="text" class="form-control" value="Bantuan Admin">
+                </div>
+                <hr>
+                <form>
+                  <div class="form-group">
+                    <label for="">Isi Pesan</label>
+                    <textarea class="summernote form-control"></textarea>
+                  </div>
+                  <div class="form-group text-right">
+                    <a href="admin-detail-pesan.html" class="btn btn-lg btn-warning">
+                      <i class="fa fa-arrow-left" aria-hidden="true"></i> Kembali
+                    </a>
+                    <button class="btn btn-success btn-lg">
+                      <i class="fa fa-paper-plane" aria-hidden="true"></i> Kirim Balasan
                     </button>
                   </div>
-                  <a href="admin-tulis-pesan.html" class="badge badge-success">
-                    <i class="fa fa-plus" aria-hidden="true"></i> Tulis Pesan
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="div col-lg-3 col-md-3 col-12">
-                <div class="card rounded">
-                  <div class="card-body">
-                    <div class="admin-pesan-active p-3 bg-light rounded">
-                      <i class="fa fa-inbox mr-2" aria-hidden="true"></i>
-                      <strong>Pesan Masuk (1)</strong>
-                    </div>
-                    <hr>
-                    <div class="admin-pesan-active p-3">
-                      <i class="fa fa-paper-plane mr-2" aria-hidden="true"></i>
-                      <strong>Pesan Terkirim</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-9 col-md-9 col-12">
-                <div class="card rounded">
-                  <div class="card-body">
-                    <div class="row justify-content-around bg-light rounded">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">
-                          <i class="fa fa-caret-down text-muted" aria-hidden="true"></i>
-                        </label>
-                      </div>
-                      <strong class="text-dark">Junaedi</strong>
-                      <a href="admin-detail-pesan.html" class="text-dark">
-                        <strong>
-                          Assalamualaikum wr wb admin, mau bertanya terkait akun ini
-                        </strong>
-                      </a>
-                      <strong class="text-dark">15.30</strong>
-                    </div>
-                    <hr>
-                    <div class="row justify-content-around">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                        <label class="custom-control-label" for="customCheck2">
-                          <i class="fa fa-caret-down text-light" aria-hidden="true"></i>
-                        </label>
-                      </div>
-                      <p>Junaedi</p>
-                      <p>Assalamualaikum wr wb admin, mau bertanya terkait akun ini</p>
-                      <p>15.30</p>
-                    </div>
-                    <hr>
-                    <div class="row justify-content-around">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                        <label class="custom-control-label" for="customCheck2">
-                          <i class="fa fa-caret-down text-light" aria-hidden="true"></i>
-                        </label>
-                      </div>
-                      <p>Junaedi</p>
-                      <p>Assalamualaikum wr wb admin, mau bertanya terkait akun ini</p>
-                      <p>15.30</p>
-                    </div>
-                    <hr>
-                    <div class="row justify-content-around">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                        <label class="custom-control-label" for="customCheck2">
-                          <i class="fa fa-caret-down text-light" aria-hidden="true"></i>
-                        </label>
-                      </div>
-                      <p>Junaedi</p>
-                      <p>Assalamualaikum wr wb admin, mau bertanya terkait akun ini</p>
-                      <p>15.30</p>
-                    </div>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
@@ -310,6 +249,7 @@
   <!-- JAVASCRIPT KEBUTUHAN HALAMAN -->
   <script src="assets/modules/sweetalert/sweetalert.min.js"></script>
   <script src="assets/js/page/modules-sweetalert.js"></script>
+  <script src="assets/modules/summernote/summernote-bs4.js"></script>
   
 </body>
 
