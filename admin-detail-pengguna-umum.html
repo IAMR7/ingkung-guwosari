@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Admin Detail Pengguna Umum-BELANJA GUWOSARI</title>
+
+  <!-- CSS BOOTSTRAP -->
+  <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.css">
+
+  <!-- CSS FONT AWESOME -->
+  <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS BOXICONS -->
+  <link rel="stylesheet" href="assets/modules/boxicons-2.0.7/css/boxicons.css">
+
+  <!-- CSS CUSTOM HALAMAN -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+
+      <!-- NAVBAR -->
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <form class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i
+                  class="fas fa-search"></i></a></li>
+          </ul>
+          <div class="search-element">
+            <input class="form-control" type="search" placeholder="Cari Sesuatu Disini" aria-label="Search"
+              data-width="250">
+            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+            <div class="search-backdrop"></div>
+          </div>
+        </form>
+        <ul class="navbar-nav navbar-right">
+
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+              class="nav-link nav-link-lg message-toggle beep"><i class="bx bx-chat"></i></a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right">
+              <div class="dropdown-header">Pesan Masuk (1)</div>
+              <div class="dropdown-list-content dropdown-list-message">
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-avatar">
+                    <img alt="image" src="https://pbs.twimg.com/profile_images/1186463332695326720/607r-6rY_400x400.jpg"
+                      class="rounded-circle">
+                    <div class="is-online"></div>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Rahmat Andi</b>
+                    <p>Permisi Admin, saya memiliki kendala dengan UMKM saya</p>
+                    <div class="time">2 Jam Yang Lalu</div>
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="admin-pesan.html">Lihat Semua Pesan <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+              class="nav-link notification-toggle nav-link-lg beep"><i class="bx bx-bell"></i></a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right">
+              <div class="dropdown-header">Notifikasi (1)
+                <div class="float-right">
+                  <a href="#">Tandai Semua Terbaca</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-icons">
+
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-icon bg-info text-white">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Kusnadi</b> Telah melunasi pembayaran
+                    <div class="time text-primary">2 Menit Yang Lalu</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" data-toggle="dropdown"
+              class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+              <img alt="image" src="assets/img/avatar/admin.png" class="rounded-circle mr-1">
+              <div class="d-sm-none d-lg-inline-block">Halo, Admin</div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-title">Sedang Aktif</div>
+              <a href="admin-info-admin.html" class="dropdown-item has-icon">
+                <i class="fas fa-user-tie"></i> Profil Admin
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="admin-login.html" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Keluar Dashboard
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- END NAVBAR -->
+
+      <!-- SIDEBAR -->
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="#">Admin Panel</a>
+          </div>
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="#">AP</a>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="menu-header">Dashboard</li>
+            <li>
+              <a href="admin-dashboard.html" class="nav-link">
+                <i class="fas fa-home"></i>
+                <span>Dashboard Admin</span>
+              </a>
+            </li>
+            <li class="menu-header">Menu Admin</li>
+            <li class="dropdown active">
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-users"></i><span>Data Pengguna</span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="nav-link" href="admin-data-pengguna-admin.html">
+                    Pengguna Admin
+                  </a>
+                </li>
+                <li class="active">
+                  <a class="nav-link" href="admin-data-pengguna-umum.html">
+                    Pengguna Umum
+                  </a>
+                </li>
+                <li>
+                  <a class="nav-link" href="admin-data-pengguna-umkm.html">
+                    Pengguna UMKM
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="admin-manage-artikel.html" class="nav-link">
+                <i class="fas fa-newspaper"></i>
+                <span>Postingan Artikel</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-postingan-edukasi.html" class="nav-link">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <span>Postingan Edukasi</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-info-pesanan.html" class="nav-link">
+                <i class="fas fa-clipboard-check"></i>
+                <span>Pesanan Masuk</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-info-rekening.html" class="nav-link">
+                <i class="fas fa-credit-card"></i>
+                <span>Info Rekening</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-pengaturan-umum.html" class="nav-link">
+                <i class="fas fa-cog"></i>
+                <span>Pengaturan Umum</span>
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <!-- END SIDEBAR -->
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-header">
+            <h1>Detail Pengguna Umum</h1>
+          </div>
+          <div class="section-body">
+            <div class="section-body">
+              <div class="row">
+                <div class="col-md-4 col-12">
+                  <div class="card">
+                    <div class="card-body container">
+                      <img src="assets/img/avatar/avatar-1.png" alt="" class="image" width="100%">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8 col-12">
+                  <div class="card">
+                    <div class="card-body container">
+                      <div class="data-diri">
+                        <h5 class="mb-4">Informasi Data Diri</h5>
+                        <div class="d-flex text-justify">
+                          <p class="text-dark mr-4">Nama Lengkap</p>
+                          <p>Supriyadi Hariyanto</p>
+                        </div>
+                        <div class="d-flex text-justify">
+                          <p class="text-dark mr-4">Tanggal Lahir</p>
+                          <p>20 Juni 1995</p>
+                        </div>
+                        <div class="d-flex text-justify">
+                          <p class="text-dark mr-4">Jenis Kelamin</p>
+                          <p>Laki-laki</p>
+                        </div>
+                        <div class="d-flex text-justify">
+                          <p class="text-dark mr-4">Alamat Utama</p>
+                          <p>Jl Tanjung Pura No 21 Rt 10 Rw 05 Pegadungan Kalideres Jakarta Barat</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="info-akun">
+                        <h5 class="mb-4">Informasi Akun</h5>
+                        <div class="d-flex text-justify">
+                          <p class="text-dark mr-4">Email</p>
+                          <p>supriyadihariyanto@gmail.com</p>
+                        </div>
+                        <div class="d-flex text-justify">
+                          <p class="text-dark mr-4">Nomor Telepon</p>
+                          <p>082143336575</p>
+                        </div>
+                        <div class="d-flex text-justify">
+                          <p class="text-dark mr-4">Password</p>
+                          <p>***************</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="rekening-akun">
+                        <h5 class="mb-4">Informasi Rekening Akun</h5>
+                        <div class="d-flex text-justify">
+                          <p class="text-dark mr-4">Nama Bank</p>
+                          <p>BRI</p>
+                        </div>
+                        <div class="d-flex text-justify">
+                          <p class="text-dark mr-4">Nomor Rekening</p>
+                          <p>1223 4128 321 832</p>
+                        </div>
+                        <div class="d-flex text-justify">
+                          <p class="text-dark mr-4">Atas Nama</p>
+                          <p>Supriyadi Hariyanto</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <a href="admin-data-pengguna-umum.html" class="btn btn-lg btn-success">
+                        <i class="fa fa-arrow-left" aria-hidden="true"></i> Kembali
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2021 <div class="bullet"></div> Created By &hearts; <a
+            href="https://www.instagram.com/iam.r7/">Reza Febriansyah</a> To Guwosari
+        </div>
+        <div class="footer-right">
+
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT UTAMA -->
+  <script src="assets/modules/jquery.min.js"></script>
+  <script src="assets/modules/popper.js"></script>
+  <script src="assets/modules/tooltip.js"></script>
+  <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="assets/modules/moment.min.js"></script>
+  <script src="assets/js/script-utilities.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <!-- JAVASCRIPT KEBUTUHAN HALAMAN -->
+  <script src="assets/modules/sweetalert/sweetalert.min.js"></script>
+  <script src="assets/js/page/modules-sweetalert.js"></script>
+
+</body>
+
+</html>
