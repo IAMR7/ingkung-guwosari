@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Admin Detail Pengguna Admin-BELANJA GUWOSARI</title>
+  <title>Admin Edit Profil Admin-BELANJA GUWOSARI</title>
 
   <!-- CSS BOOTSTRAP -->
   <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.css">
@@ -12,10 +12,8 @@
   <!-- CSS FONT AWESOME -->
   <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
 
-  <!-- CSS DATATABLES -->
-  <link rel="stylesheet" href="assets/modules/datatables/datatables.min.css">
-  <link rel="stylesheet" href="assets/modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
-  <link rel="stylesheet" href="assets/modules/datatables/Select-1.2.4/css/select.bootstrap4.min.css">
+  <!-- CSS SELECTRIC -->
+  <link rel="stylesheet" href="assets/modules/jquery-selectric/selectric.css">
 
   <!-- CSS BOXICONS -->
   <link rel="stylesheet" href="assets/modules/boxicons-2.0.7/css/boxicons.css">
@@ -191,14 +189,23 @@
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h1>Profil Admin</h1>
+            <h1>Edit Profil Admin</h1>
           </div>
           <div class="section-body">
             <div class="row">
               <div class="col-md-4 col-12">
                 <div class="card">
                   <div class="card-body container">
-                    <img src="assets/img/avatar/admin.png" alt="" class="image" width="100%">
+                    <div class="form-group d-flex justify-content-center">
+                      <div id="image-preview" class="image-preview foto-edit-data-admin">
+                        <label for="image-upload" id="image-label">Pilih Foto</label>
+                        <input type="file" name="image" id="image-upload" />
+                      </div>
+                    </div>
+                    <p class="text-justify text-muted">
+                      Besar file: maksimum 10.000.000 bytes (10 Megabytes). Ekstensi file yang diperbolehkan: .JPG .JPEG
+                      .PNG
+                    </p>
                   </div>
                 </div>
               </div>
@@ -209,25 +216,38 @@
                       <h5 class="mb-4">Informasi Data Diri</h5>
                       <div class="d-flex text-justify">
                         <p class="text-dark mr-4">Nama Lengkap</p>
-                        <p>Admin Utama</p>
+                        <div class="form-group">
+                          <input type="text" class="form-control" value="Admin Utama">
+                        </div>
                       </div>
                       <div class="d-flex text-justify">
                         <p class="text-dark mr-4">NIK</p>
-                        <p>3182150605200000</p>
+                        <div class="form-group">
+                          <input type="number" class="form-control" value="3182150605200000">
+                        </div>
                       </div>
                       <div class="d-flex text-justify">
                         <p class="text-dark mr-4">Tanggal Lahir</p>
-                        <p>20 Juni 1995</p>
+                        <div class="form-group">
+                          <input type="date" class="form-control" value="1994-01-02">
+                        </div>
                       </div>
                       <div class="d-flex text-justify">
                         <p class="text-dark mr-4">Jenis Kelamin</p>
-                        <p>Laki-laki</p>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" value="" checked="checked">
+                          <label class="custom-control-label" for="customRadioInline1">Laki-laki</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                          <label class="custom-control-label" for="customRadioInline2">Perempuan </label>
+                        </div>
                       </div>
                       <div class="d-flex text-justify">
                         <p class="text-dark mr-4">Alamat</p>
-                        <p>
-                          Jl Tanjung Pura No 21 Rt 10 Rw 05 Pegadungan Kalideres Jakarta Barat
-                        </p>
+                        <div class="form-group">
+                          <textarea class="form-control" name="" id="" rows="3">Jl Tanjung Pura No 21 Rt 10 Rw 05 Pegadungan Kalideres Jakarta Barat</textarea>
+                        </div>
                       </div>
                     </div>
                     <hr>
@@ -235,11 +255,15 @@
                       <h5 class="mb-4">Email, Telepon dan Role</h5>
                       <div class="d-flex text-justify">
                         <p class="text-dark mr-4">Email</p>
-                        <p>adminutama@guwosari.com</p>
+                        <div class="form-group">
+                          <input type="text" class="form-control" value="adminutama@guwosari.com">
+                        </div>
                       </div>
                       <div class="d-flex text-justify">
                         <p class="text-dark mr-4">Nomor Telepon</p>
-                        <p>082143336575</p>
+                        <div class="form-group">
+                          <input type="text" class="form-control" value="082143336575">
+                        </div>
                       </div>
                       <div class="d-flex text-justify">
                         <p class="text-dark mr-4">Role</p>
@@ -251,15 +275,15 @@
                       <h5 class="mb-4">Password Akun Admin</h5>
                       <div class="d-flex text-justify">
                         <p class="text-dark mr-4">Password</p>
-                        <p>************</p>
+                        <p>************ <a href="ubah-password.html" class="text-success ml-3">Ganti Password ?</a></p>
                       </div>
                     </div>
                     <hr>
-                    <a href="admin-dashboard.html" class="btn btn-lg btn-success">
-                      <i class="fa fa-arrow-left" aria-hidden="true"></i> Kembali
-                    </a>
-                    <a href="admin-edit-profil-admin.html" class="btn btn-lg btn-warning">
-                      <i class="fa fa-user-edit" aria-hidden="true"></i> Ubah Profil
+                    <button class="btn btn-lg btn-success">
+                      <i class="fa fa-save" aria-hidden="true"></i> Simpan
+                    </button>
+                    <a href="admin-info-admin.html" class="btn btn-lg btn-danger">
+                      <i class="fa fa-times" aria-hidden="true"></i> Batalkan
                     </a>
                   </div>
                 </div>
@@ -292,6 +316,9 @@
   <script src="assets/js/custom.js"></script>
 
   <!-- JAVASCRIPT KEBUTUHAN HALAMAN -->
+  <script src="assets/modules/jquery-selectric/jquery.selectric.min.js"></script>
+  <script src="assets/modules/upload-preview/assets/js/jquery.uploadPreview.min.js"></script>
+  <script src="assets/js/page/features-post-create.js"></script>
 
 </body>
 
