@@ -466,6 +466,12 @@ div.icon-rugi {
     height: 50px;
 }
 
+/* EDIT DATA ADMIN */
+div.image-preview.foto-edit-data-admin {
+    background-image: url("../img/avatar/admin.png");
+    background-size: cover;
+}
+
 @media (min-width: 992px) {
 
     div.main-content {

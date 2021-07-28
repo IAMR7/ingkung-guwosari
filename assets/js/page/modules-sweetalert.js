@@ -159,6 +159,26 @@ $("#swal-hapus-artikel").click(function() {
     );
 });
 
+$("#swal-hapus-data").click(function() {
+  swal({
+      title: 'Yakin Hapus Data Ini ?',
+      text: 'Setelah menekan "OK" Data Akan Dihapus',
+      icon: 'warning',
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+        if (willDelete) {
+          swal('Data Berhasil Dihapus', {
+            icon: 'success',
+          });
+        } else {
+          swal('Batal Hapus Data');
+        }
+      }
+    );
+});
+
 $("#swal-simpan-produk").click(function() {
   swal({
       title: 'Apakah Produk Sudah Benar ?',

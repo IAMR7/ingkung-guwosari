@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Admin Data Pengguna Admin-BELANJA GUWOSARI</title>
+  <title>Admin Detail Pengguna Admin-BELANJA GUWOSARI</title>
 
   <!-- CSS BOOTSTRAP -->
   <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.css">
@@ -191,79 +191,68 @@
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h1>Data Pengguna Admin</h1>
+            <h1>Detail Pengguna Admin</h1>
           </div>
           <div class="section-body">
-
             <div class="row">
-              <div class="col-12">
+              <div class="col-md-4 col-12">
                 <div class="card">
-                  <div class="card-header d-flex justify-content-between">
-                    <h4>Daftar Pengguna Admin</h4>
-                    <a href="admin-tambah-admin.html" class="btn btn-lg btn-success">
-                      <i class="fa fa-plus" aria-hidden="true"></i> Tambah Admin
-                    </a>
+                  <div class="card-body container">
+                    <img src="assets/img/avatar/admin.png" alt="" class="image" width="100%">
                   </div>
-                  <div class="card-body">
-                    <div class="table-responsive">
-                      <table class="table table-hovered table-striped" id="table-2">
-                        <thead>
-                          <tr>
-                            <th class="text-center">
-                              <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" data-checkbox-role="dad"
-                                  class="custom-control-input" id="checkbox-all">
-                                <label for="checkbox-all" class="custom-control-label">&nbsp;</label>
-                              </div>
-                            </th>
-                            <th>Foto</th>
-                            <th>Nama</th>
-                            <th>Role</th>
-                            <th>NIK</th>
-                            <th>Tanggal Lahir</th>
-                            <th>Aksi</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                                  id="checkbox-1">
-                                <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                              </div>
-                            </td>
-                            <td>
-                              <img src="assets/img/avatar/admin.png" alt=""
-                              class="rounded mr-3" width="70px" height="70px">
-                            </td>
-                            <td>
-                              Admin Utama
-                            </td>
-                            <td>
-                              Admin
-                            </td>
-                            <td>3182150605200000</td>
-                            <td>
-                              2 Januari 1994
-                            </td>
-                            <td>
-                              <div class="btn-group">
-                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
-                                  aria-haspopup="true" aria-expanded="false">
-                                  Pilihan
-                                </button>
-                                <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="admin-detail-data-admin.html">Detail Data Admin</a>
-                                  <a class="dropdown-item" href="admin-edit-data-admin.html">Edit Data Admin</a>
-                                  <a class="dropdown-item text-danger" id="swal-hapus-data" href="#">Hapus Admin</a>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                </div>
+              </div>
+              <div class="col-md-8 col-12">
+                <div class="card">
+                  <div class="card-body container">
+                    <div class="data-diri">
+                      <h5 class="mb-4">Informasi Data Diri</h5>
+                      <div class="d-flex text-justify">
+                        <p class="text-dark mr-4">Nama Lengkap</p>
+                        <p>Admin Utama</p>
+                      </div>
+                      <div class="d-flex text-justify">
+                        <p class="text-dark mr-4">NIK</p>
+                        <p>3182150605200000</p>
+                      </div>
+                      <div class="d-flex text-justify">
+                        <p class="text-dark mr-4">Tanggal Lahir</p>
+                        <p>20 Juni 1995</p>
+                      </div>
+                      <div class="d-flex text-justify">
+                        <p class="text-dark mr-4">Jenis Kelamin</p>
+                        <p>Laki-laki</p>
+                      </div>
+                      <div class="d-flex text-justify">
+                        <p class="text-dark mr-4">Alamat</p>
+                        <p>
+                          Jl Tanjung Pura No 21 Rt 10 Rw 05 Pegadungan Kalideres Jakarta Barat
+                        </p>
+                      </div>
                     </div>
+                    <hr>
+                    <div class="info-akun">
+                      <h5 class="mb-4">Email, Telepon dan Role</h5>
+                      <div class="d-flex text-justify">
+                        <p class="text-dark mr-4">Email</p>
+                        <p>adminutama@guwosari.com</p>
+                      </div>
+                      <div class="d-flex text-justify">
+                        <p class="text-dark mr-4">Nomor Telepon</p>
+                        <p>082143336575</p>
+                      </div>
+                      <div class="d-flex text-justify">
+                        <p class="text-dark mr-4">Role</p>
+                        <p class="text-muted">Admin</p>
+                      </div>
+                    </div>
+                    <hr>
+                    <a href="admin-data-pengguna-admin.html" class="btn btn-lg btn-success">
+                      <i class="fa fa-arrow-left" aria-hidden="true"></i> Kembali
+                    </a>
+                    <a href="admin-edit-data-admin.html" class="btn btn-lg btn-warning">
+                      <i class="fa fa-user-edit" aria-hidden="true"></i> Ubah Data
+                    </a>
                   </div>
                 </div>
               </div>
@@ -295,14 +284,6 @@
   <script src="assets/js/custom.js"></script>
 
   <!-- JAVASCRIPT KEBUTUHAN HALAMAN -->
-  <script src="assets/modules/datatables/datatables.min.js"></script>
-  <script src="assets/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
-  <script src="assets/modules/datatables/Select-1.2.4/js/dataTables.select.min.js"></script>
-  <script src="assets/modules/jquery-ui/jquery-ui.min.js"></script>
-  <script src="assets/js/page/modules-datatables.js"></script>
-  <script src="assets/modules/sweetalert/sweetalert.min.js"></script>
-  <script src="assets/js/page/modules-sweetalert.js"></script>
-  <script src="assets/js/page/index-0.js"></script>
 
 </body>
 
