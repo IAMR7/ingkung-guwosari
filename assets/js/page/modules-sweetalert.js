@@ -11,6 +11,13 @@ $("#swal-2").click(function() {
   }, 1500);
 });
 
+$("#swal-teruskan-pesanan").click(function() {
+	swal('Berhasil!', 'Pesanan diteruskan kepada UMKM', 'success');
+  // setTimeout(function(){ 
+  //   window.location.href = "invoice.html";
+  // }, 1500);
+});
+
 $("#swal-3").click(function() {
 	swal('Good Job', 'You clicked the button!', 'warning');
 });
