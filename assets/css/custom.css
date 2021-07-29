@@ -472,6 +472,12 @@ div.image-preview.foto-edit-data-admin {
     background-size: cover;
 }
 
+/* EDIT ARTIKEL ADMIN */
+div.image-preview.sampul-artikel {
+    background-image: url("https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_400,h_260/Blog_Cover_ID_-_Tempat_Wisata_di_Semarang_hrimmu.webp");
+    background-size: cover;
+}
+
 @media (min-width: 992px) {
 
     div.main-content {

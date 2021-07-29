@@ -110,6 +110,28 @@ $("#swal-batal-transaksi").click(function() {
     });
 });
 
+$("#swal-post-artikel").click(function() {
+  swal({
+      title: 'Apakah sudah benar ?',
+      text: 'Setelah menekan "OK" artikel akan diterbitkan',
+      icon: 'warning',
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+      swal('Artikel berhasil dibuat', {
+        icon: 'success',
+      });
+      setTimeout(function(){ 
+        window.location.href = "admin-manage-artikel.html";
+      }, 1300);
+      } else {
+      swal('Gagal posting artikel');
+      }
+    });
+});
+
 $("#swal-beranda-umkm").click(function() {
 	swal('Anda harus mendaftar sebagai UMKM terlebih dahulu');
   setTimeout(function(){ 
