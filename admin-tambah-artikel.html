@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Admin Postingan Artikel-BELANJA GUWOSARI</title>
+  <title>Admin Tambah Artikel-BELANJA GUWOSARI</title>
 
   <!-- CSS BOOTSTRAP -->
   <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.css">
@@ -12,10 +12,11 @@
   <!-- CSS FONT AWESOME -->
   <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
 
-  <!-- CSS DATATABLES -->
-  <link rel="stylesheet" href="assets/modules/datatables/datatables.min.css">
-  <link rel="stylesheet" href="assets/modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
-  <link rel="stylesheet" href="assets/modules/datatables/Select-1.2.4/css/select.bootstrap4.min.css">
+  <!-- CSS SUMMERNOTE -->
+  <link rel="stylesheet" href="assets/modules/summernote/summernote-bs4.css">
+
+  <!-- CSS SELECTRIC -->
+  <link rel="stylesheet" href="assets/modules/jquery-selectric/selectric.css">
 
   <!-- CSS BOXICONS -->
   <link rel="stylesheet" href="assets/modules/boxicons-2.0.7/css/boxicons.css">
@@ -191,81 +192,56 @@
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h1>Postingan Artikel</h1>
+            <h1>Tambah Artikel</h1>
           </div>
           <div class="section-body">
-
-            <div class="row">
-              <div class="col-12">
-                <div class="card">
-                  <div class="card-header d-flex justify-content-between">
-                    <h4>Daftar Artikel</h4>
-                    <a href="admin-tambah-artikel.html" class="btn btn-lg btn-success">
-                      <i class="fa fa-plus" aria-hidden="true"></i> Tambah Artikel
-                    </a>
+            <div class="card rounded">
+              <div class="card-body">
+                <div class="form-group row mb-4">
+                  <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Judul Artikel</label>
+                  <div class="col-sm-12 col-md-7">
+                    <input type="text" class="form-control">
                   </div>
-                  <div class="card-body">
-                    <div class="table-responsive">
-                      <table class="table table-hovered table-striped" id="table-2">
-                        <thead>
-                          <tr>
-                            <th class="text-center">
-                              <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" data-checkbox-role="dad"
-                                  class="custom-control-input" id="checkbox-all">
-                                <label for="checkbox-all" class="custom-control-label">&nbsp;</label>
-                              </div>
-                            </th>
-                            <th>Sampul</th>
-                            <th>Judul</th>
-                            <th>Kategori</th>
-                            <th>Penulis</th>
-                            <th>Tanggal</th>
-                            <th>Aksi</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                                  id="checkbox-1">
-                                <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                              </div>
-                            </td>
-                            <td>
-                              <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_400,h_260/Blog_Cover_ID_-_Tempat_Wisata_di_Semarang_hrimmu.webp" alt=""
-                              class="rounded mr-3" width="70px" height="70px">
-                            </td>
-                            <td>
-                              Lorem ipsum dolor sit amet consectetur ...
-                            </td>
-                            <td>
-                              Wisata
-                            </td>
-                            <td>
-                              Admin Utama
-                            </td>
-                            <td>
-                              2021/04/21
-                            </td>
-                            <td>
-                              <div class="btn-group">
-                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
-                                  aria-haspopup="true" aria-expanded="false">
-                                  Pilihan
-                                </button>
-                                <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="detail-wisata.html" target="_blank">Tinjau Artikel</a>
-                                  <a class="dropdown-item" href="admin-edit-artikel">Edit Artikel</a>
-                                  <a class="dropdown-item text-danger" id="swal-hapus-data" href="#">Hapus Artikel</a>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                </div>
+                <div class="form-group row mb-4">
+                  <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Kategori</label>
+                  <div class="col-sm-12 col-md-7">
+                    <select class="form-control selectric">
+                      <option>Wisata</option>
+                      <option>Umum</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row mb-4">
+                  <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Isi Konten</label>
+                  <div class="col-sm-12 col-md-7">
+                    <textarea class="summernote"></textarea>
+                  </div>
+                </div>
+                <div class="form-group row mb-4">
+                  <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">
+                    Sampul Artikel
+                  </label>
+                  <div class="col-sm-12 col-md-7">
+                    <div id="image-preview" class="image-preview">
+                      <label for="image-upload" id="image-label">Choose File</label>
+                      <input type="file" name="image" id="image-upload" />
                     </div>
+                  </div>
+                </div>
+                <div class="form-group row mb-4">
+                  <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Status</label>
+                  <div class="col-sm-12 col-md-7">
+                    <select class="form-control selectric">
+                      <option>Terbit</option>
+                      <option>Simpan Dulu</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row mb-4">
+                  <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
+                  <div class="col-sm-12 col-md-7">
+                    <button class="btn btn-success">Buat Postingan</button>
                   </div>
                 </div>
               </div>
@@ -297,14 +273,12 @@
   <script src="assets/js/custom.js"></script>
 
   <!-- JAVASCRIPT KEBUTUHAN HALAMAN -->
-  <script src="assets/modules/datatables/datatables.min.js"></script>
-  <script src="assets/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
-  <script src="assets/modules/datatables/Select-1.2.4/js/dataTables.select.min.js"></script>
-  <script src="assets/modules/jquery-ui/jquery-ui.min.js"></script>
-  <script src="assets/js/page/modules-datatables.js"></script>
+  <script src="assets/modules/summernote/summernote-bs4.js"></script>
+  <script src="assets/modules/jquery-selectric/jquery.selectric.min.js"></script>
+  <script src="assets/modules/upload-preview/assets/js/jquery.uploadPreview.min.js"></script>
+  <script src="assets/js/page/features-post-create.js"></script>
   <script src="assets/modules/sweetalert/sweetalert.min.js"></script>
   <script src="assets/js/page/modules-sweetalert.js"></script>
-  <script src="assets/js/page/index-0.js"></script>
 
 </body>
 
