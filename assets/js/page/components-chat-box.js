@@ -100,7 +100,7 @@ for(var i = 0; i < chatsPembeli.length; i++) {
   if(chatsPembeli[i].typing != undefined) type = 'typing';
   $.chatCtrl('#mychatbox3', {
     text: (chatsPembeli[i].text != undefined ? chatsPembeli[i].text : ''),
-    picture: (chatsPembeli[i].position == 'left' ? 'https://ik.imagekit.io/tvlk/cul-asset/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/tvlk-prod-cul-assets/culinary/asset/REST_000-960x720-FIT_AND_TRIM-cc75c94b625065a494326affcd53ebc5.jpeg?tr=q-40,w-300,h-300&_src=imagekit' : 'assets/img/avatar/avatar-1.png'),
+    picture: (chatsPembeli[i].position == 'left' ? 'http://127.0.0.1:5500/assets/img/warung-ndeso.png' : 'https://iamr7.github.io/assets/images/favicon.png'),
     position: 'chat-'+chatsPembeli[i].position,
     type: type
   });
@@ -111,7 +111,7 @@ $("#chat-form3").submit(function() {
   if(me.find('input').val().trim().length > 0) {      
     $.chatCtrl('#mychatbox3', {
       text: me.find('input').val(),
-      picture: 'assets/img/avatar/avatar-1.png',
+      picture: 'https://iamr7.github.io/assets/images/favicon.png',
     });
     me.find('input').val('');
   } 
@@ -164,7 +164,7 @@ for(var i = 0; i < chatDetail.length; i++) {
   if(chatDetail[i].typing != undefined) type = 'typing';
   $.chatCtrl('#mychatbox4', {
     text: (chatDetail[i].text != undefined ? chatDetail[i].text : ''),
-    picture: (chatDetail[i].position == 'left' ? 'https://ik.imagekit.io/tvlk/cul-asset/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/tvlk-prod-cul-assets/culinary/asset/REST_000-960x720-FIT_AND_TRIM-cc75c94b625065a494326affcd53ebc5.jpeg?tr=q-40,w-300,h-300&_src=imagekit' : 'assets/img/avatar/avatar-1.png'),
+    picture: (chatDetail[i].position == 'left' ? 'https://ik.imagekit.io/tvlk/cul-asset/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/tvlk-prod-cul-assets/culinary/asset/REST_000-960x720-FIT_AND_TRIM-cc75c94b625065a494326affcd53ebc5.jpeg?tr=q-40,w-300,h-300&_src=imagekit' : 'https://iamr7.github.io/assets/images/favicon.png'),
     position: 'chat-'+chatDetail[i].position,
     type: type
   });
@@ -175,7 +175,7 @@ $("#chat-form4").submit(function() {
   if(me.find('input').val().trim().length > 0) {      
     $.chatCtrl('#mychatbox4', {
       text: me.find('input').val(),
-      picture: 'assets/img/avatar/avatar-1.png',
+      picture: 'https://iamr7.github.io/assets/images/favicon.png',
     });
     me.find('input').val('');
   } 
