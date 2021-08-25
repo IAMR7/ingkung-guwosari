@@ -323,13 +323,13 @@ img.image-default {
 }
 
 img.image-default-produk {
-    background: url("https://cf.shopee.co.id/file/2a4482c8bfb4dd170ea5b33e86c08854");
+    background: url("../img/produk/ingkung-waroeng-ndesso.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-img.image-default-produk-2 {
+/* img.image-default-produk-2 {
     background: url("https://cf.shopee.co.id/file/2a4482c8bfb4dd170ea5b33e86c08854");
     background-size: cover;
     background-repeat: no-repeat;
@@ -348,7 +348,7 @@ img.image-default-produk-4 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 
 /* DASHBOARD UMKM */
 div.widget-edukasi img {
